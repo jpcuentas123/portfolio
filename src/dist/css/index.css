@@ -1,0 +1,54 @@
+body {
+  background-image: url("/src/assets/img/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#Header-logo {
+  font-size: 32px;
+  padding-left: 4vw;
+  font-weight: 400;
+}
+
+.Header-menu {
+  padding: 1vh 5vh;
+  font-size: 16px;
+  background: transparent;
+}
+
+.Header-content {
+  background: rgba(239, 239, 239, 0.98) !important;
+}
+
+.background-transparent {
+  background: transparent;
+}
+
+.Home-about {
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.Home-about-content {
+  height: 50vh;
+  margin: auto auto;
+  padding-top: 10vh;
+}
+
+.Home-about-content h2 {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.Home-about-content p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.Home-divider {
+  height: 2px;
+  background-color: #707070;
+  margin-top: 5vh !important;
+}
+/*# sourceMappingURL=index.css.map */
