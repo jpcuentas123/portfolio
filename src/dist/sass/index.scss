@@ -22,32 +22,91 @@ body {
   background: transparent;
 }
 .Home {
-  &-about {
+  &-row {
     height: 100vh;
     background: rgba(255, 255, 255, 0.9);
+  }
+  &-content {
+    height: 50vh;
+    margin: auto auto;
+    padding-top: 10vh;
 
-    &-content{
-        height: 50vh;
-        margin: auto auto;
-        padding-top: 10vh;
-
-        h2{
-            font-size: 34px;
-            font-weight: 400;
-        }
-        p{
-            font-size: 16px;
-            text-align: justify;
-        }
+    h2 {
+      font-size: 34px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 16px;
+      text-align: justify;
     }
   }
-  &-divider{
-      height: 2px;
-      background-color: #707070;
-      margin-top: 5vh !important;
-
-      &-container{
-        //   margin-top: 10vh;
+  &-divider {
+    height: 2px;
+    background-color: #70707038;
+    margin-top: 5vh !important;
+  }
+  &-experiences-header {
+    height: auto;
+    padding-top: 0vh;
+    h2 {
+      text-align: center;
+    }
+  }
+  &-experiences-container {
+    height: 50vh;
+    padding-top: 10vh;
+    h2 {
+      text-align: center;
+    }
+  }
+  &-experiences {
+    .ant-col {
+      text-align: center !important;
+    }
+    small {
+      font-size: 14px;
+    }
+    .selected {
+      font-weight: 600;
+      color: #707070;
+      cursor: default;
+    }
+    .unselected {
+      color: rgba(112, 112, 112, 0.67);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .unselected:hover {
+      color: #707070cc;
+    }
+    &-contentTitle {
+      border-bottom: 1px #70707057 solid;
+      height: 50%;
+      text-align: start;
+      h3 {
+        text-align: start;
+        padding-left: 2vw;
+        color: #707070;
+        font-size: 20px;
+        font-weight: normal;
+        padding-bottom: 0px;
       }
+    }
+    &-content{
+      padding-left: 4vw;
+      .Experiences-content-date_info{
+        p{
+          text-align: start;
+        }
+      }
+      .Experiences-content-description{
+        p{
+          text-align: justify;
+          font-size: 16px;
+          font-weight: 400;
+          color: rgb(53, 53, 53);
+        }
+      }
+    }
   }
 }

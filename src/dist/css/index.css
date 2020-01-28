@@ -25,30 +25,103 @@ body {
   background: transparent;
 }
 
-.Home-about {
+.Home-row {
   height: 100vh;
   background: rgba(255, 255, 255, 0.9);
 }
 
-.Home-about-content {
+.Home-content {
   height: 50vh;
   margin: auto auto;
   padding-top: 10vh;
 }
 
-.Home-about-content h2 {
+.Home-content h2 {
   font-size: 34px;
   font-weight: 400;
 }
 
-.Home-about-content p {
+.Home-content p {
   font-size: 16px;
   text-align: justify;
 }
 
 .Home-divider {
   height: 2px;
-  background-color: #707070;
+  background-color: #70707038;
   margin-top: 5vh !important;
+}
+
+.Home-experiences-header {
+  height: auto;
+  padding-top: 0vh;
+}
+
+.Home-experiences-header h2 {
+  text-align: center;
+}
+
+.Home-experiences-container {
+  height: 50vh;
+  padding-top: 10vh;
+}
+
+.Home-experiences-container h2 {
+  text-align: center;
+}
+
+.Home-experiences .ant-col {
+  text-align: center !important;
+}
+
+.Home-experiences small {
+  font-size: 14px;
+}
+
+.Home-experiences .selected {
+  font-weight: 600;
+  color: #707070;
+  cursor: default;
+}
+
+.Home-experiences .unselected {
+  color: rgba(112, 112, 112, 0.67);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Home-experiences .unselected:hover {
+  color: #707070cc;
+}
+
+.Home-experiences-contentTitle {
+  border-bottom: 1px #70707057 solid;
+  height: 50%;
+  text-align: start;
+}
+
+.Home-experiences-contentTitle h3 {
+  text-align: start;
+  padding-left: 2vw;
+  color: #707070;
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 0px;
+}
+
+.Home-experiences-content {
+  padding-left: 4vw;
+}
+
+.Home-experiences-content .Experiences-content-date_info p {
+  text-align: start;
+}
+
+.Home-experiences-content .Experiences-content-description p {
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  color: #353535;
 }
 /*# sourceMappingURL=index.css.map */
