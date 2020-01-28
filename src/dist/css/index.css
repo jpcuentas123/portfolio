@@ -46,6 +46,10 @@ body {
   text-align: justify;
 }
 
+.Home-about-content-skills {
+  margin-top: 4vh;
+}
+
 .Home-divider {
   height: 2px;
   background-color: #70707038;

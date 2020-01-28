@@ -11,3 +11,5 @@ const blogPreview = () => {
         </Row>
     )
 }
+
+extends default blogPreview;

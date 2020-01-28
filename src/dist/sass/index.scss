@@ -40,6 +40,11 @@ body {
       text-align: justify;
     }
   }
+  &-about-content{
+    &-skills{
+      margin-top: 4vh;
+    }
+  }
   &-divider {
     height: 2px;
     background-color: #70707038;
