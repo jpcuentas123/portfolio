@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Skeleton } from 'antd';
 
-class blogPreview extends React.Component {
+class Blog extends React.Component {
     render() {
         return (
             <Row type="flex" align="top" justify="center" className="Home-blogPreview Home-row">
@@ -30,4 +30,4 @@ class blogPreview extends React.Component {
     }
 }
 
-export default blogPreview;
+export default Blog;

@@ -1,7 +1,7 @@
 import React from 'react';
 import About from './Home/About'
 import Experiences from './Home/Experiences_&_Proyects'
-// import { render } from 'react-dom';
+import BlogPreview from './Home/blogPreview';
 
 class Home extends React.Component{
     render(){
@@ -9,6 +9,7 @@ class Home extends React.Component{
             <div className="Home">
                 <About/>
                 <Experiences/>
+                <BlogPreview/>
             </div>
         )
     }

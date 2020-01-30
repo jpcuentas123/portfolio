@@ -56,24 +56,6 @@ body {
   margin-top: 5vh !important;
 }
 
-.Home-experiences-header {
-  height: auto;
-  padding-top: 0vh;
-}
-
-.Home-experiences-header h2 {
-  text-align: center;
-}
-
-.Home-experiences-container {
-  height: 50vh;
-  padding-top: 10vh;
-}
-
-.Home-experiences-container h2 {
-  text-align: center;
-}
-
 .Home-experiences .ant-col {
   text-align: center !important;
 }
@@ -127,5 +109,75 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #353535;
+}
+
+.Home-experiences-header {
+  height: auto;
+  padding-top: 0vh;
+}
+
+.Home-experiences-header h2 {
+  text-align: center;
+}
+
+.Home-experiences-container {
+  height: 50vh;
+  padding-top: 10vh;
+}
+
+.Home-experiences-container h2 {
+  text-align: center;
+}
+
+.Home-blogPreview {
+  height: 78vh;
+}
+
+.Home-blogPreview-header h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.Footer {
+  height: 40vh;
+  background-color: rgba(97, 97, 97, 0.85);
+}
+
+.Footer-content {
+  padding-left: 5vw;
+  padding-top: 10vh;
+  color: white;
+}
+
+.Footer-content p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Footer-content ul {
+  list-style: none;
+}
+
+.Footer-content ul li {
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Footer-content ul li:hover {
+  color: #cecece;
+}
+
+.Contact {
+  padding-top: 15vh;
+  min-height: 150vh;
+}
+
+.Contact h2 {
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

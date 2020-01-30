@@ -40,8 +40,8 @@ body {
       text-align: justify;
     }
   }
-  &-about-content{
-    &-skills{
+  &-about-content {
+    &-skills {
       margin-top: 4vh;
     }
   }
@@ -49,20 +49,6 @@ body {
     height: 2px;
     background-color: #70707038;
     margin-top: 5vh !important;
-  }
-  &-experiences-header {
-    height: auto;
-    padding-top: 0vh;
-    h2 {
-      text-align: center;
-    }
-  }
-  &-experiences-container {
-    height: 50vh;
-    padding-top: 10vh;
-    h2 {
-      text-align: center;
-    }
   }
   &-experiences {
     .ant-col {
@@ -97,15 +83,15 @@ body {
         padding-bottom: 0px;
       }
     }
-    &-content{
+    &-content {
       padding-left: 4vw;
-      .Experiences-content-date_info{
-        p{
+      .Experiences-content-date_info {
+        p {
           text-align: start;
         }
       }
-      .Experiences-content-description{
-        p{
+      .Experiences-content-description {
+        p {
           text-align: justify;
           font-size: 16px;
           font-weight: 400;
@@ -113,5 +99,63 @@ body {
         }
       }
     }
+    &-header {
+      height: auto;
+      padding-top: 0vh;
+      h2 {
+        text-align: center;
+      }
+    }
+    &-container {
+      height: 50vh;
+      padding-top: 10vh;
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  &-blogPreview {
+    height: 78vh;
+    &-header {
+      h2 {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.Footer {
+  height: 40vh;
+  background-color: hsla(0, 0%, 38%, 0.85);
+  &-content {
+    padding-left: 5vw;
+    padding-top: 10vh;
+    color: white;
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    ul {
+      list-style: none;
+      li {
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      li:hover {
+        color: rgb(206, 206, 206);
+      }
+    }
+  }
+}
+.Contact {
+  padding-top: 15vh;
+  min-height: 150vh;
+  h2 {
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
   }
 }

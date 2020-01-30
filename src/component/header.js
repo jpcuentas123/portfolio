@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { Menu, Icon, Row, Col } from 'antd';
 import '.././App.css';
 
@@ -12,13 +12,13 @@ function HeaderMenu() {
         <Col span={8}>
             <Menu  mode="horizontal" className="Header-menu">
               <Menu.Item key="mail">
-                  <Link activeOnlyWhenExact={true} to="/"><Icon type="home" /> Home</Link>
+                  <Link to="/"><Icon type="home" /> Home</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link activeOnlyWhenExact={true} to="/blog"><Icon type="read" /> Blog</Link>
+                <Link to="/blog"><Icon type="read" /> Blog</Link>
               </Menu.Item>
             <Menu.Item key="alipay">
-                <Link activeOnlyWhenExact={true} to="/contacto"><Icon type="mail" /> Contato</Link>
+                <Link activeOnlyWhenExact={true} to="/contact"><Icon type="mail" /> Contato</Link>
             </Menu.Item>
           </Menu>
         </Col>
