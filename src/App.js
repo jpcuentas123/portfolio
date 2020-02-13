@@ -13,15 +13,13 @@ import store from './redux/store';
 const { Header } = Layout;
 
 
+
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       menu: this.props.location.pathname
     }
-  }
-  componentWillMount(){
-    console.log("Link:"+this.state.menu)
   }
   render() {
     return (

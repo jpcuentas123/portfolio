@@ -1,7 +1,11 @@
 import React from 'react'
 import { Row, Col, Skeleton } from 'antd';
+import background from '../assets/img/BackgroundBlog.jpg'
 
 class Blog extends React.Component {
+    componentDidMount() {
+        document.querySelector("body").style.backgroundImage = `url(${background})`;
+    };
     render() {
         return (
             <Row type="flex" align="top" justify="center" className="Home-blogPreview Home-row">

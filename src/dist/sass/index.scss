@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
 }
 #Header-logo {
   font-size: 32px;
@@ -151,10 +152,33 @@ body {
 }
 .Contact {
   padding-top: 15vh;
-  min-height: 150vh;
+  min-height: 100vh;
   h2 {
     font-size: 34px;
     font-weight: 400;
     text-align: center;
+  }
+  input{
+    margin-top: 10px;
+    padding: 20px;
+  }
+  .ant-select-selection.ant-select-selection--single{
+    margin-top: 10px;
+    height: 42px;
+  }
+  .ant-input.ant-select-search__field{
+    margin-top: 0px !important;
+  }
+  textarea{
+    margin-top: 10px;
+    height: 100px;
+  }
+  &-buttonContainer{
+    text-align: center;
+    margin-top: 20px;
+    button{
+      height: 40px;
+      width: 8  0px;
+    }
   }
 }

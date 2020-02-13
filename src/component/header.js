@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Icon, Row, Col } from 'antd';
-import '.././App.css';
 import { Change_link } from '../redux/index'
 import { useDispatch, useSelector } from 'react-redux';
 
 function HeaderMenu({menuLink}) {
 
-  const actualLink = useSelector(state => state.link)
+  // const actualLink = useSelector(state => state.link)
   const dispatch = useDispatch();
   const [initialLink, changeInitialLink] = useState(menuLink)
 

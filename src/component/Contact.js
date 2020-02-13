@@ -1,260 +1,73 @@
 import React from 'react'
+import background from '../assets/img/BackgroundContact.jpg'
 
 import {
     Form,
     Input,
-    Tooltip,
-    Icon,
-    Cascader,
-    Select,
     Row,
     Col,
-    Checkbox,
     Button,
     AutoComplete,
 } from 'antd';
-const { Option } = Select;
-const AutoCompleteOption = AutoComplete.Option;
-const residences = [
-    {
-        value: 'zhejiang',
-        label: 'Zhejiang',
-        children: [
-            {
-                value: 'hangzhou',
-                label: 'Hangzhou',
-                children: [
-                    {
-                        value: 'xihu',
-                        label: 'West Lake',
-                    },
-                ],
-            },
-        ],
-    },
-    {
-        value: 'jiangsu',
-        label: 'Jiangsu',
-        children: [
-            {
-                value: 'nanjing',
-                label: 'Nanjing',
-                children: [
-                    {
-                        value: 'zhonghuamen',
-                        label: 'Zhong Hua Men',
-                    },
-                ],
-            },
-        ],
-    },
-];
+
+const Textarea = Input.TextArea
+
 class Contact extends React.Component {
+
     state = {
-        confirmDirty: false,
-        autoCompleteResult: [],
+        dataSource: [],
+        loading: false,
+        iconLoading: false,
     };
 
-    handleSubmit = e => {
-        e.preventDefault();
-        this.props.form.validateFieldsAndScroll((err, values) => {
-            if (!err) {
-                console.log('Received values of form: ', values);
-            }
+    enterLoading = () => {
+        this.setState({ loading: true });
+    };
+
+    enterIconLoading = () => {
+        this.setState({ iconLoading: true });
+    };
+
+    handleChange = value => {
+        this.setState({
+            dataSource:
+                !value || value.indexOf('@') >= 0
+                    ? []
+                    : [`${value}@gmail.com`, `${value}@outlook.com`, `${value}@hotmail.com`, `${value}@yahoo.com`],
         });
     };
 
-    handleConfirmBlur = e => {
-        const { value } = e.target;
-        this.setState({ confirmDirty: this.state.confirmDirty || !!value });
-    };
-
-    compareToFirstPassword = (rule, value, callback) => {
-        const { form } = this.props;
-        if (value && value !== form.getFieldValue('password')) {
-            callback('Two passwords that you enter is inconsistent!');
-        } else {
-            callback();
-        }
-    };
-
-    validateToNextPassword = (rule, value, callback) => {
-        const { form } = this.props;
-        if (value && this.state.confirmDirty) {
-            form.validateFields(['confirm'], { force: true });
-        }
-        callback();
-    };
-
-    handleWebsiteChange = value => {
-        let autoCompleteResult;
-        if (!value) {
-            autoCompleteResult = [];
-        } else {
-            autoCompleteResult = ['.com', '.org', '.net'].map(domain => `${value}${domain}`);
-        }
-        this.setState({ autoCompleteResult });
+    componentDidMount() {
+        document.querySelector("body").style.backgroundImage = `url(${background})`;
     };
 
     render() {
-        const { getFieldDecorator } = this.props.form;
-        const { autoCompleteResult } = this.state;
-
-        const formItemLayout = {
-            labelCol: {
-                xs: { span: 24 },
-                sm: { span: 8 },
-            },
-            wrapperCol: {
-                xs: { span: 24 },
-                sm: { span: 16 },
-            },
-        };
-        const tailFormItemLayout = {
-            wrapperCol: {
-                xs: {
-                    span: 24,
-                    offset: 0,
-                },
-                sm: {
-                    span: 16,
-                    offset: 8,
-                },
-            },
-        };
-        const prefixSelector = getFieldDecorator('prefix', {
-            initialValue: '86',
-        })(
-            <Select style={{ width: 70 }}>
-                <Option value="86">+86</Option>
-                <Option value="87">+87</Option>
-            </Select>,
-        );
-
-        const websiteOptions = autoCompleteResult.map(website => (
-            <AutoCompleteOption key={website}>{website}</AutoCompleteOption>
-        ))
-
         return (
             <Row type="flex" align="top" justify="center" className="Contact Home-row">
                 <Col span={12} className="Contact-header">
-                    <Row type="flex" align="top" justify="start">
+                    <Row type="flex" align="top" justify="center">
                         <Col md={24}>
                             <h2>Contact</h2>
                         </Col>
-                    </Row>
-                </Col>
-                <Col span={24}>
-                    <Row type="flex" justify="center" align="middle">
-                        <Col md={18}>
-                            <Row type="flex" justify="space-around" align="middle">
-                                <Form {...formItemLayout} onSubmit={this.handleSubmit}>
-                                    <Form.Item
-                                        label={
-                                            <span>
-                                                Name&nbsp;
-                                                <Icon type="question-circle-o" />
-                                            </span>
-                                        }
-                                    >
-                                        {getFieldDecorator('nickname', {
-                                            rules: [{ required: true, message: 'Please input your nickname!', whitespace: true }],
-                                        })(<Input />)}
-                                    </Form.Item>
-                                    <Form.Item label="E-mail">
-                                        {getFieldDecorator('email', {
-                                            rules: [
-                                                {
-                                                    type: 'email',
-                                                    message: 'The input is not valid E-mail!',
-                                                },
-                                                {
-                                                    required: true,
-                                                    message: 'Please input your E-mail!',
-                                                },
-                                            ],
-                                        })(<Input />)}
-                                    </Form.Item>
-                                    <Form.Item label="Password" hasFeedback>
-                                        {getFieldDecorator('password', {
-                                            rules: [
-                                                {
-                                                    required: true,
-                                                    message: 'Please input your password!',
-                                                },
-                                                {
-                                                    validator: this.validateToNextPassword,
-                                                },
-                                            ],
-                                        })(<Input.Password />)}
-                                    </Form.Item>
-                                    <Form.Item label="Confirm Password" hasFeedback>
-                                        {getFieldDecorator('confirm', {
-                                            rules: [
-                                                {
-                                                    required: true,
-                                                    message: 'Please confirm your password!',
-                                                },
-                                                {
-                                                    validator: this.compareToFirstPassword,
-                                                },
-                                            ],
-                                        })(<Input.Password onBlur={this.handleConfirmBlur} />)}
-                                    </Form.Item>
-                                    <Form.Item label="Habitual Residence">
-                                        {getFieldDecorator('residence', {
-                                            initialValue: ['zhejiang', 'hangzhou', 'xihu'],
-                                            rules: [
-                                                { type: 'array', required: true, message: 'Please select your habitual residence!' },
-                                            ],
-                                        })(<Cascader options={residences} />)}
-                                    </Form.Item>
-                                    <Form.Item label="Phone Number">
-                                        {getFieldDecorator('phone', {
-                                            rules: [{ required: true, message: 'Please input your phone number!' }],
-                                        })(<Input addonBefore={prefixSelector} style={{ width: '100%' }} />)}
-                                    </Form.Item>
-                                    <Form.Item label="Website">
-                                        {getFieldDecorator('website', {
-                                            rules: [{ required: true, message: 'Please input website!' }],
-                                        })(
-                                            <AutoComplete
-                                                dataSource={websiteOptions}
-                                                onChange={this.handleWebsiteChange}
-                                                placeholder="website"
-                                            >
-                                                <Input />
-                                            </AutoComplete>,
-                                        )}
-                                    </Form.Item>
-                                    <Form.Item label="Captcha" extra="We must make sure that your are a human.">
-                                        <Row gutter={8}>
-                                            <Col span={12}>
-                                                {getFieldDecorator('captcha', {
-                                                    rules: [{ required: true, message: 'Please input the captcha you got!' }],
-                                                })(<Input />)}
-                                            </Col>
-                                            <Col span={12}>
-                                                <Button>Get captcha</Button>
-                                            </Col>
-                                        </Row>
-                                    </Form.Item>
-                                    <Form.Item {...tailFormItemLayout}>
-                                        {getFieldDecorator('agreement', {
-                                            valuePropName: 'checked',
-                                        })(
-                                            <Checkbox>
-                                                I have read the <a href="">agreement</a>
-                                            </Checkbox>,
-                                        )}
-                                    </Form.Item>
-                                    <Form.Item {...tailFormItemLayout}>
-                                        <Button type="primary" htmlType="submit">
-                                            Register
-                                            </Button>
-                                    </Form.Item>
-                                </Form>
-                            </Row>
+                        <Col md={12}>
+                            <Input placeholder="Name" key="name" name="name" id="name" />
+                            <Input placeholder="Last name" key="lastname" name="lastname" id="lastname" />
+                            <AutoComplete
+                                style={{ width: 100 + "%" }}
+                                dataSource={this.state.dataSource}
+                                onChange={this.handleChange}
+                                placeholder="Email"
+                                key="email" name="email" id="email"
+                            />
+                            <Input placeholder="Subject" key="subject" name="subject" id="subject" />
+                            <Textarea placeholder="Menssage" key="menssage" name="menssage" id="menssage">
+                            </Textarea>
+                            <div className="Contact-buttonContainer">
+                                <Button type="primary" loading={this.state.loading} onClick={this.enterLoading}>
+                                    Send
+                                </Button>
+                            </div>
+
                         </Col>
                     </Row>
                 </Col>
