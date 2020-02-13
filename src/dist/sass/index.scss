@@ -158,27 +158,40 @@ body {
     font-weight: 400;
     text-align: center;
   }
-  input{
+  input {
     margin-top: 10px;
     padding: 20px;
   }
-  .ant-select-selection.ant-select-selection--single{
+  .ant-select-selection.ant-select-selection--single {
     margin-top: 10px;
     height: 42px;
   }
-  .ant-input.ant-select-search__field{
+  .ant-input.ant-select-search__field {
     margin-top: 0px !important;
   }
-  textarea{
+  textarea {
     margin-top: 10px;
     height: 100px;
   }
-  &-buttonContainer{
+  &-buttonContainer {
     text-align: center;
     margin-top: 20px;
-    button{
+    button {
       height: 40px;
-      width: 8  0px;
+      width: 8 0px;
+    }
+  }
+}
+.Blog {
+  &-container {
+    background-color: #d4d4d4;
+    min-height: 240px;
+    p {
+      height: 129px;
+      overflow: hidden;
+    }
+    &--row{
+      min-height: 240px;
     }
   }
 }
