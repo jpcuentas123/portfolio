@@ -2,15 +2,22 @@ import React from 'react'
 import { Row, Col } from 'antd';
 import background from '../assets/img/BackgroundBlog.jpg'
 import Blogimg1 from '../assets/img/blog_1.png'
+import styled from 'styled-components';
+
 
 class Blog extends React.Component {
     componentDidMount() {
         document.querySelector("body").style.backgroundImage = `url(${background})`;
     };
     render() {
+        const ComingSoonTitle = styled.h1`
+            font-size: 48px;
+            margin: auto;
+            color: #707070;
+        `
         return (
             <Row type="flex" align="top" justify="center" className="Home-blogPreview Home-row">
-                <Col span={12} className="Home-blogPreview-header">
+                {/* <Col span={12} className="Home-blogPreview-header">
                     <Row type="flex" align="top" justify="start">
                         <Col md={24}>
                             <h2>Blog</h2>
@@ -21,7 +28,6 @@ class Blog extends React.Component {
                     <Row type="flex" justify="center" align="middle">
                         <Col md={18} className="Blog-container">
                             <Row type="flex" justify="space-around" align="middle" className="Blog-container--row">
-                                {/* <Skeleton active avatar title /> */}
                                 <Col md={5}>
                                     <img src={Blogimg1} alt="Imagen no disponible" />
                                 </Col>
@@ -29,8 +35,8 @@ class Blog extends React.Component {
                                     <Row>
                                         <Col><h2>Viaje al amazonas</h2></Col>
                                         <Col><small>07/01/2020</small></Col>
-                                        <Col>
-                                            <p>
+                                        <Col className="Blog-container-description">
+                                            <p >
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida ante magna, dignissim fermentum
                                                 lectus lobortis cursus. Vestibulum et elit vel lectus interdum varius. Etiam maximus odio erat, eget molestie
                                                 ex consequat vitae. Aliquam vehicula placerat erat at maximus. Morbi at aliquam ex, quis elementum nulla.
@@ -45,7 +51,8 @@ class Blog extends React.Component {
                             </Row>
                         </Col>
                     </Row>
-                </Col>
+                </Col> */}
+                <ComingSoonTitle>Coming Soon</ComingSoonTitle>
             </Row>
         )
     }

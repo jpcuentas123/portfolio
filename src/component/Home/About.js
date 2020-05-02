@@ -15,10 +15,11 @@ class HomeAbout extends React.Component{
                                 <Col md={10}>
                                     <h4><b>Skills</b> - Frontend</h4>
                                     <ul>
-                                        <li>Java Script (EM6)</li>
+                                        <li>JavaScript (EM6)</li>
                                         <li>React.js</li>
                                         <li>HTML & Css3</li>
                                         <li>Sass</li>
+                                        <li>Desing Ui - Ux</li>
                                     </ul>
                                 </Col>
                                 <Col md={10}>
