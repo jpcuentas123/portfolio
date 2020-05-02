@@ -28,7 +28,7 @@ function HeaderMenu({menuLink}) {
             <Link onClick={() => Change_link_Dispatch("/blog")} to="/blog"><Icon type="read" /> Blog</Link>
           </Menu.Item>
           <Menu.Item key="/contact">
-            <Link onClick={() => Change_link_Dispatch("/contact")} to="/contact"><Icon type="mail" /> Contato</Link>
+            <Link onClick={() => Change_link_Dispatch("/contact")} to="/contact"><Icon type="mail" /> Contact</Link>
           </Menu.Item>
         </Menu>
       </Col>
