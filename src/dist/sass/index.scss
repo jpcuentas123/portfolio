@@ -70,9 +70,12 @@ body {
     .unselected:hover {
       color: #707070cc;
     }
+    &-item{
+      margin-bottom: 2rem;
+    }
     &-contentTitle {
       border-bottom: 1px #70707057 solid;
-      height: 50%;
+      height: 4.2vh;
       text-align: start;
       h3 {
         text-align: start;
@@ -107,7 +110,7 @@ body {
       }
     }
     &-container {
-      height: 50vh;
+      min-height: 50vh;
       padding-top: 10vh;
       h2 {
         text-align: center;
