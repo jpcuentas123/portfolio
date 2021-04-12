@@ -39,6 +39,7 @@ class App extends Component {
               </Route>
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/contact" component={Contact} />
+              
             </Switch>
           </Suspense>
           <Footer />

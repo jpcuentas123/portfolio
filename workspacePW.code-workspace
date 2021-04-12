@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "build"
+		},
+		{
+			"path": "..\\api"
+		},
+		{
+			"path": "..\\..\\Diseños"
 		}
 	],
 	"settings": {}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import background from '../assets/img/BackgroundContact.jpg'
 
 import {
@@ -12,24 +12,33 @@ import {
 
 const Textarea = Input.TextArea
 
-class Contact extends React.Component {
+const Contact = () => {
 
-    state = {
+    const initialstate = {
         dataSource: [],
         loading: false,
         iconLoading: false,
     };
+    const [state, setState] = useState(initialstate)
 
-    enterLoading = () => {
-        this.setState({ loading: true });
+
+    const enterLoading = () => {
+
+        setState({
+            loading: true
+        })
     };
 
-    enterIconLoading = () => {
-        this.setState({ iconLoading: true });
+    const enterIconLoading = () => {
+        setState({
+            ...state,
+            iconLoading: true
+        })
     };
 
-    handleChange = value => {
-        this.setState({
+    const handleChange = value => {
+        setState({
+            ...state,
             dataSource:
                 !value || value.indexOf('@') >= 0
                     ? []
@@ -37,11 +46,10 @@ class Contact extends React.Component {
         });
     };
 
-    componentDidMount() {
+    useEffect(() => {
         document.querySelector("body").style.backgroundImage = `url(${background})`;
-    };
+    }, [])
 
-    render() {
         return (
             <Row type="flex" align="top" justify="center" className="Contact Home-row">
                 <Col span={12} className="Contact-header">
@@ -54,8 +62,8 @@ class Contact extends React.Component {
                             <Input placeholder="Last name" key="lastname" name="lastname" id="lastname" />
                             <AutoComplete
                                 style={{ width: 100 + "%" }}
-                                dataSource={this.state.dataSource}
-                                onChange={this.handleChange}
+                                dataSource={state.dataSource}
+                                onChange={handleChange}
                                 placeholder="Email"
                                 key="email" name="email" id="email"
                             />
@@ -63,7 +71,7 @@ class Contact extends React.Component {
                             <Textarea placeholder="Menssage" key="menssage" name="menssage" id="menssage">
                             </Textarea>
                             <div className="Contact-buttonContainer">
-                                <Button type="primary" loading={this.state.loading} onClick={this.enterLoading}>
+                                <Button type="primary" loading={state.loading} onClick={enterLoading}>
                                     Send
                                 </Button>
                             </div>
@@ -73,7 +81,6 @@ class Contact extends React.Component {
                 </Col>
             </Row>
         );
-    }
 
 }
 

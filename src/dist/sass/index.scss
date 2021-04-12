@@ -1,4 +1,8 @@
 $heightsections: 100vh;
+@import 'fonts', 'primaryTheme';
+
+
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +20,7 @@ body {
   background: transparent;
 }
 .Header-content {
-  background: rgba(239, 239, 239, 0.98) !important;
+  background: $backgroundHeaderColor !important;
 }
 .background-transparent {
   background: transparent;
@@ -24,7 +28,7 @@ body {
 .Home {
   &-row {
     height: 100vh;
-    background: rgba(255, 255, 255, 0.9);
+    background: $backgroundColor;
   }
   &-content {
     height: 50vh;
@@ -55,7 +59,7 @@ body {
       text-align: center !important;
     }
     small {
-      font-size: 14px;
+      font-size: $fontSzMedium;
     }
     .selected {
       font-weight: 600;
@@ -81,7 +85,7 @@ body {
         text-align: start;
         padding-left: 2vw;
         color: #707070;
-        font-size: 20px;
+        font-size: $fontSzLarge;
         font-weight: normal;
         padding-bottom: 0px;
       }
@@ -96,10 +100,13 @@ body {
       .Experiences-content-description {
         p {
           text-align: justify;
-          font-size: 16px;
+          font-size: $fontSzMedium;
           font-weight: 400;
           color: rgb(53, 53, 53);
         }
+      }
+      li{
+        font-size: $fontSzSmall;
       }
     }
     &-header {
@@ -160,28 +167,4 @@ body {
     }
   }
 }
-.Blog {
-  &-container {
-    background-color: rgba(235, 235, 235, 0.705);
-    min-height: 240px;
-    box-shadow: 0px 0px 1px rgba(239, 239, 239, 0.98);
-    cursor: pointer;
-    transition: all 0.5s;
-    p {
-      height: 129px;
-      overflow: hidden;
-    }
-    &--row{
-      min-height: 240px;
-    }
-    &-description{
-      background-color: rgba(255, 255, 255, 0.6);
-      padding: 5px;
-      margin-top: 5px;
-    }
-  }
-  &-container:hover{
-    background-color: rgba(235, 235, 235, 1);
-    box-shadow: 0px 0px 2px rgba(206, 206, 206, 0.98);
-  }
-}
+
