@@ -1,7 +1,5 @@
 $heightsections: 100vh;
-@import 'fonts', 'primaryTheme';
-
-
+@import "fonts", "primaryTheme";
 
 body {
   background-size: cover;
@@ -21,6 +19,12 @@ body {
 }
 .Header-content {
   background: $backgroundHeaderColor !important;
+  p {
+    margin: 0;
+  }
+}
+.ant-layout-header {
+  height: auto !important;
 }
 .background-transparent {
   background: transparent;
@@ -74,7 +78,7 @@ body {
     .unselected:hover {
       color: #707070cc;
     }
-    &-item{
+    &-item {
       margin-bottom: 2rem;
     }
     &-contentTitle {
@@ -105,7 +109,7 @@ body {
           color: rgb(53, 53, 53);
         }
       }
-      li{
+      li {
         font-size: $fontSzSmall;
       }
     }
@@ -132,6 +136,7 @@ body {
         font-size: 34px;
         font-weight: 400;
       }
+      margin: 4vh;
     }
   }
 }
@@ -167,4 +172,3 @@ body {
     }
   }
 }
-

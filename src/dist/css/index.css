@@ -21,6 +21,14 @@ body {
   background: rgba(239, 239, 239, 0.98) !important;
 }
 
+.Header-content p {
+  margin: 0;
+}
+
+.ant-layout-header {
+  height: auto !important;
+}
+
 .background-transparent {
   background: transparent;
 }
@@ -139,6 +147,10 @@ body {
 
 .Home-blogPreview {
   height: 78vh;
+}
+
+.Home-blogPreview-header {
+  margin: 4vh;
 }
 
 .Home-blogPreview-header h2 {

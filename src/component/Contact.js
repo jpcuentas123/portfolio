@@ -2,50 +2,25 @@ import React, { useEffect, useState } from 'react'
 import background from '../assets/img/BackgroundContact.jpg'
 
 import {
-    Form,
-    Input,
     Row,
     Col,
-    Button,
-    AutoComplete,
 } from 'antd';
 
-const Textarea = Input.TextArea
+import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
+const useStyles = makeStyles((theme) => ({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+        width: '25ch',
+      },
+    },
+  }));
+
 
 const Contact = () => {
-
-    const initialstate = {
-        dataSource: [],
-        loading: false,
-        iconLoading: false,
-    };
-    const [state, setState] = useState(initialstate)
-
-
-    const enterLoading = () => {
-
-        setState({
-            loading: true
-        })
-    };
-
-    const enterIconLoading = () => {
-        setState({
-            ...state,
-            iconLoading: true
-        })
-    };
-
-    const handleChange = value => {
-        setState({
-            ...state,
-            dataSource:
-                !value || value.indexOf('@') >= 0
-                    ? []
-                    : [`${value}@gmail.com`, `${value}@outlook.com`, `${value}@hotmail.com`, `${value}@yahoo.com`],
-        });
-    };
-
+    const classes = useStyles();
+    
     useEffect(() => {
         document.querySelector("body").style.backgroundImage = `url(${background})`;
     }, [])
@@ -58,23 +33,12 @@ const Contact = () => {
                             <h2>Contact</h2>
                         </Col>
                         <Col md={12}>
-                            <Input placeholder="Name" key="name" name="name" id="name" />
-                            <Input placeholder="Last name" key="lastname" name="lastname" id="lastname" />
-                            <AutoComplete
-                                style={{ width: 100 + "%" }}
-                                dataSource={state.dataSource}
-                                onChange={handleChange}
-                                placeholder="Email"
-                                key="email" name="email" id="email"
-                            />
-                            <Input placeholder="Subject" key="subject" name="subject" id="subject" />
-                            <Textarea placeholder="Menssage" key="menssage" name="menssage" id="menssage">
-                            </Textarea>
-                            <div className="Contact-buttonContainer">
-                                <Button type="primary" loading={state.loading} onClick={enterLoading}>
-                                    Send
-                                </Button>
-                            </div>
+                            <form action="" className={classes.root} ></form>
+                            <TextField required id="standard-basic" label="Nombre" />
+                            <TextField required id="standard-basic" label="Email" />
+                            <TextField id="standard-basic" label="Teléfono" />
+                            <TextField required id="standard-basic" label="Asunto" />
+                            <TextField multiline required id="standard-basic" label="Mensaje" />
 
                         </Col>
                     </Row>
@@ -84,5 +48,4 @@ const Contact = () => {
 
 }
 
-const WrappedRegistrationForm = Form.create({ name: 'register' })(Contact);
-export default WrappedRegistrationForm
+export default Contact
