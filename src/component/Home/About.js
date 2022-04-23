@@ -11,7 +11,7 @@ class HomeAbout extends React.Component {
         justify="center"
         className="Home-about Home-row"
       >
-        <Col span={12} className="Home-about-content Home-content">
+        <Col md={12} xs={18} className="Home-about-content Home-content">
           <Row type="flex" align="middle" justify="start">
             <Col offset={2} md={12}>
               <h2>ABOUT ME</h2>

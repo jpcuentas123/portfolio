@@ -11,7 +11,7 @@ class blogPreview extends React.Component {
         `
         return (
             <Row type="flex" align="top" justify="center" className="Home-blogPreview Home-row">
-                <Col span={12} className="Home-blogPreview-header">
+                <Col md={12} xs={3} className="Home-blogPreview-header">
                     <Row type="flex" align="top" justify="start">
                         <Col md={24}>
                             <h2>Blog</h2>
@@ -19,7 +19,7 @@ class blogPreview extends React.Component {
                     </Row>
                 </Col>
 
-                <Col span={24} style={{textAlign:"center"}}>
+                <Col span={24} style={{ textAlign: "center" }}>
                     <ComingSoonTitle>Coming Soon</ComingSoonTitle>
                     {/* <Row type="flex" justify="center" align="middle">
                         <Col md={18}>

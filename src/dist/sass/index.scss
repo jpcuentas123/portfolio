@@ -31,11 +31,10 @@ body {
 }
 .Home {
   &-row {
-    height: 100vh;
+    min-height: 100vh;
     background: $backgroundColor;
   }
   &-content {
-    height: 50vh;
     margin: auto auto;
     padding-top: 10vh;
 
@@ -67,7 +66,9 @@ body {
     }
     .selected {
       font-weight: 600;
-      color: #707070;
+      font-size: 1.1rem;
+      text-decoration: underline;
+      color: #1c1c1c;
       cursor: default;
     }
     .unselected {
@@ -82,16 +83,14 @@ body {
       margin-bottom: 2rem;
     }
     &-contentTitle {
-      border-bottom: 1px #70707057 solid;
-      height: 4.2vh;
-      text-align: start;
       h3 {
         text-align: start;
-        padding-left: 2vw;
         color: #707070;
         font-size: $fontSzLarge;
         font-weight: normal;
         padding-bottom: 0px;
+        font-size: 1.5rem;
+        border-bottom: 1px #70707057 solid;
       }
     }
     &-content {
@@ -122,14 +121,14 @@ body {
     }
     &-container {
       min-height: 50vh;
-      padding-top: 10vh;
+      padding-top: 5vh;
       h2 {
         text-align: center;
       }
     }
   }
   &-blogPreview {
-    height: 78vh;
+    min-height: 50vh;
     &-header {
       h2 {
         text-align: center;

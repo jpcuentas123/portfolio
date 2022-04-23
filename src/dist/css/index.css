@@ -34,12 +34,11 @@ body {
 }
 
 .Home-row {
-  height: 100vh;
+  min-height: 100vh;
   background: rgba(255, 255, 255, 0.9);
 }
 
 .Home-content {
-  height: 50vh;
   margin: auto auto;
   padding-top: 10vh;
 }
@@ -74,7 +73,9 @@ body {
 
 .Home-experiences .selected {
   font-weight: 600;
-  color: #707070;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: #1c1c1c;
   cursor: default;
 }
 
@@ -93,19 +94,14 @@ body {
   margin-bottom: 2rem;
 }
 
-.Home-experiences-contentTitle {
-  border-bottom: 1px #70707057 solid;
-  height: 4.2vh;
-  text-align: start;
-}
-
 .Home-experiences-contentTitle h3 {
   text-align: start;
-  padding-left: 2vw;
   color: #707070;
   font-size: 1.5rem;
   font-weight: normal;
   padding-bottom: 0px;
+  font-size: 1.5rem;
+  border-bottom: 1px #70707057 solid;
 }
 
 .Home-experiences-content {
@@ -138,7 +134,7 @@ body {
 
 .Home-experiences-container {
   min-height: 50vh;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .Home-experiences-container h2 {
@@ -146,7 +142,7 @@ body {
 }
 
 .Home-blogPreview {
-  height: 78vh;
+  min-height: 50vh;
 }
 
 .Home-blogPreview-header {
