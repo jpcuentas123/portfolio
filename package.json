@@ -6,6 +6,8 @@
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "antd": "^4.16.9",
+    "formik": "^2.2.9",
+    "i18next": "^21.6.16",
     "immer": "^9.0.12",
     "nth-check": "^2.0.1",
     "react": "^18.0.0",
@@ -16,7 +18,8 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "styled-components": "^5.2.1",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

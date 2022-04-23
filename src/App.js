@@ -12,7 +12,7 @@ import store from "./redux/store";
 
 const Home = React.lazy(() => import("./component/Home"));
 const Blog = React.lazy(() => import("./component/Blog"));
-const Contact = React.lazy(() => import("./component/Contact"));
+const Contact = React.lazy(() => import("./component/Contact/View"));
 
 const { Header } = Layout;
 
