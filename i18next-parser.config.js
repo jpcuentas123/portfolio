@@ -1,8 +1,10 @@
 module.exports = {
   keySeparator: false,
-  locales: ['es', 'en'],
+  locales: ['en', 'es'],
+  defaultNamespace: 'translation',
   namespaceSeparator: '::',
   output: 'src/locales/$LOCALE/$NAMESPACE.json',
   createOldCatalogs: false,
   failOnWarnings: true,
+  sort: true
 };
