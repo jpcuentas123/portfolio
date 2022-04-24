@@ -16,6 +16,7 @@ const Contact = React.lazy(() => import("./component/Contact/View"));
 
 const { Header } = Layout;
 
+
 class App extends Component {
   constructor(props) {
     super(props);

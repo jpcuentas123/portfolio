@@ -1,0 +1,3 @@
+const DEFAULT_FALLBACK_LANG = 'en';
+
+export default DEFAULT_FALLBACK_LANG;
