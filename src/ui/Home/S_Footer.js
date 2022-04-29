@@ -31,6 +31,10 @@ const FooterContent = styled.section`
     a:hover{
         color: #Fdfdfd2d;
     }
+    a:focus{
+        color: #Fdfdfd2d;
+        text-decoration: underline;
+    }
 `
 
 const LineFooter = styled.div`

@@ -50,31 +50,48 @@ const HomeExperiences = () => {
         setSection(newSection)
     }
 
+    const experiencesClickHandler = (e, section) => {
+        if (e.target.className !== "selected") {
+            (ToggleSection(e, section))
+        }
+    }
+
+    const experiencesOnPressHandler = (e, section) => {
+        if (e.target.className !== "selected" && e.key === "Enter") {
+            ToggleSection(e, section)
+        }
+    }
+
 
 
     return (
         <Row type="flex" align="top" justify="center" className="Home-experiences Home-row">
             <Col span={24} className="Home-experiences-header Home-content">
-                <Row type="flex" align="top" justify="start">
-                    <Col md={24}>
-                        <h2>Experiences and Proyects</h2>
-                    </Col>
+                <Row type="flex" align="top" justify="center">
+                    <h2>Experiences and Proyects</h2>
                 </Row>
             </Col>
             <Col md={12} className="Home-experiences-container">
                 <Row type="flex" align="middle" justify="start">
                     <Col md={24}>
                         <Row type="flex" justify='center'>
-                            <Col md={14}>
-                                <Row type="flex" style={{ marginBottom: "8vh" }} align="middle" justify="center">
+                            <Col xs={24} sm={24} md={14} style={{ marginBottom: "8vh" }}>
+                                <Row type="flex" style={{ width: "100%" }} align="middle" justify="center" gutter={10}>
                                     <Col md={10}>
-                                        <small className="selected" onClick={(e) => e.target.className !== "selected" && (ToggleSection(e, "proyects"))}>Proyects</small>
+                                        <small
+                                            className="selected"
+                                            tabIndex={0}
+                                            onClick={(e) => experiencesClickHandler(e, "proyects")}
+                                            onKeyPress={(e) => experiencesOnPressHandler(e, "proyects")}
+                                        >
+                                            Proyects
+                                        </small>
                                     </Col>
                                     <Col md={1}>
                                         <small>|</small>
                                     </Col>
                                     <Col md={10} data-status="selected">
-                                        <small className="unselected" onClick={(e) => e.target.className !== "selected" && (ToggleSection(e, "experiences"))}>Experiences</small>
+                                        <small className="unselected" tabIndex={0} onClick={(e) => experiencesClickHandler(e, "experiences")} onKeyPress={(e) => experiencesOnPressHandler(e, "experiences")}>Experiences</small>
                                     </Col>
                                 </Row>
                             </Col>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Row, Col } from "antd";
 import { FooterContent, FooterSection, LineFooter } from "../ui/Home/S_Footer";
 
 export default function Footer() {
@@ -13,6 +12,7 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/jorge-perez-cuentas-a26917157/"
               target="_blanck"
+              tabIndex={0}
             >
               Linkeding
             </a>
