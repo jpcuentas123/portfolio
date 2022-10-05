@@ -89,7 +89,7 @@ body {
         font-size: $fontSzLarge;
         font-weight: normal;
         padding-bottom: 0px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         border-bottom: 1px #70707057 solid;
       }
     }
@@ -147,10 +147,6 @@ body {
     font-weight: 400;
     text-align: center;
   }
-  input {
-    margin-top: 10px;
-    padding: 20px;
-  }
   .ant-select-selection.ant-select-selection--single {
     margin-top: 10px;
     height: 42px;
@@ -161,6 +157,14 @@ body {
   textarea {
     margin-top: 10px;
     height: 100px;
+  }
+  &-header {
+    h2 {
+      padding-bottom: 2vh !important;
+    }
+  }
+  input {
+    width: 100%;
   }
   &-buttonContainer {
     text-align: center;

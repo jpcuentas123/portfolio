@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, Row, Col } from "antd";
 import { Change_link } from "../redux/index";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { t } from "i18next";
 
-function HeaderMenu({ menuLink }) {
-  // const actualLink = useSelector(state => state.link)
+function HeaderMenu() {
+
+  const {
+    pathname
+  } = useLocation();
   const dispatch = useDispatch();
-  const [initialLink, changeInitialLink] = useState(menuLink);
+  const [initialLink, changeInitialLink] = useState(pathname);
 
-  const Change_link_Dispatch = (link) => {
+
+  const redirectionHandler = (link) => {
     dispatch(Change_link(link));
     changeInitialLink(link);
   };
@@ -17,7 +22,9 @@ function HeaderMenu({ menuLink }) {
   return (
     <Row>
       <Col span={16}>
-        <p id="Header-logo">JorgePC</p>
+        <p id="Header-logo"><Link onClick={() => redirectionHandler("/")} to="/" style={{
+          color: "#000000d9",
+        }}>JorgePC</Link></p>
       </Col>
       <Col span={8}>
         <Menu
@@ -26,21 +33,21 @@ function HeaderMenu({ menuLink }) {
           selectedKeys={[initialLink]}
         >
           <Menu.Item key="/">
-            <Link onClick={() => Change_link_Dispatch("/")} to="/">
-              Home
+            <Link onClick={() => redirectionHandler("/")} to="/">
+              {t("Home")}
             </Link>
           </Menu.Item>
           <Menu.Item key="/blog">
-            <Link onClick={() => Change_link_Dispatch("/blog")} to="/blog">
+            <Link onClick={() => redirectionHandler("/blog")} to="/blog">
               Blog
             </Link>
           </Menu.Item>
           <Menu.Item key="/contact">
             <Link
-              onClick={() => Change_link_Dispatch("/contact")}
+              onClick={() => redirectionHandler("/contact")}
               to="/contact"
             >
-              Contact
+              {t("Contact")}
             </Link>
           </Menu.Item>
         </Menu>

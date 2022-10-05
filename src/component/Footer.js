@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import { FooterContent, FooterSection, LineFooter } from "../ui/Home/S_Footer";
 
@@ -5,7 +6,7 @@ export default function Footer() {
   return (
     <FooterSection>
       <FooterContent>
-        <p>Social Networks</p>
+        <p>{t("Social Networks")}</p>
         <LineFooter></LineFooter>
         <ul>
           <li>

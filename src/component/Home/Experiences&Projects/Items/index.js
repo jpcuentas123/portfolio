@@ -1,11 +1,12 @@
 import { Col, Row } from "antd"
-
-const ExperiencieContent = ({ item, section }) => {
+import parse from "html-react-parser"
+import i18next from "i18next"
+const ExperienceContent = ({ item, section }) => {
 
     return (
         <Row className="Home-experiences-item">
             <Col className="Home-experiences-contentTitle" md={6}>
-                <h3>{item.tittle}</h3>
+                <h3>{item.title}</h3>
             </Col>
             <Col md={14} className="Home-experiences-content">
                 <Row type="flex">
@@ -13,11 +14,11 @@ const ExperiencieContent = ({ item, section }) => {
                         <p>{item.initial_date} - {item.end_date}</p>
                     </Col>
                     <Col md={24} className="Experiences-content-description">
-                        <p>{item.description}</p>
+                        <p>{parse(item.description[i18next.language.split("-")[0]])}</p>
                     </Col>
                 </Row>
                 {
-                    section === "proyects" && (
+                    section === "projects" && (
                         <>
                             <Row>
                                 <Col md={2}>
@@ -39,4 +40,4 @@ const ExperiencieContent = ({ item, section }) => {
     )
 }
 
-export default ExperiencieContent
+export default ExperienceContent

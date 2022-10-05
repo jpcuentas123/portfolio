@@ -1,0 +1,119 @@
+{
+    "experiences": [
+        {
+            "title": "Full Stack Developer",
+            "company": "Melt Studio",
+            "initial_date": "2021",
+            "end_date": "Present",
+            "description": {
+                "en": "I'm currently working as a full stack developer at <b>Melt Studio</b>, a company that develops web applications. I'm responsible for developing the frontend and backend of the applications, as well as the integration with the APIs of the real estate portals.",
+                "es": "Actualmente trabajo como desarrollador full stack en <b>Melt Studio</b>, una empresa que desarrolla aplicaciones web. Me encargo de desarrollar el frontend y el backend de las aplicaciones, así como la integración con las APIs."
+            }
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Krones",
+            "initial_date": "2020",
+            "end_date": "2021",
+            "description": {
+                "en": "I worked as a full stack developer at <b>Krones</b>, a company that develops machines for the beverage industry. I was responsible for developing the frontend and backend of an application that manages the production of the machines.",
+                "es": "Trabajé como desarrollador full stack en <b>Krones</b>, una empresa que desarrolla máquinas para la industria de bebidas. Desarrollé el frontend y el backend de una aplicación que gestiona la producción de las máquinas."
+            }
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Itseil",
+            "initial_date": "2020",
+            "end_date": "2021",
+            "description": {
+                "en": "I worked as a full stack developer at <b>Itseil</b>, a company that develops web applications for the real estate market. I was responsible for developing the frontend and backend of the applications, as well as the integration with the APIs of the real estate portals.",
+                "es": "Trabajé como desarrollador full stack en <b>Itseil</b>, una empresa que desarrolla aplicaciones web. Me encargaba de desarrollar el frontend y el backend de las aplicaciones, así como la integración con las APIs."
+            }
+        },
+        {
+            "title": "Freelance",
+            "company": "Workana",
+            "initial_date": "2018",
+            "end_date": "2020",
+            "description": {
+                "en": "I worked as a freelance developer on the <b>Workana</b> platform, where I developed web applications for different clients.",
+                "es": "Trabajé como desarrollador freelance en la plataforma <b>Workana</b>, donde desarrollé aplicaciones web para diferentes clientes."
+            }
+        }
+    ],
+    "projects": [
+        {
+            "title": "Suscripciones",
+            "initial_date": "2020",
+            "end_date": "2021",
+            "description": {
+                "en": "Suscripciones | Platform for managing subscriptions.",
+                "es": "Suscripciones | Plataforma para la gestión de suscripciones."
+            },
+            "tools": [
+                {
+                    "title": "HTML"
+                },
+                {
+                    "title": "CSS"
+                },
+                {
+                    "title": "React"
+                },
+                {
+                    "title": "Next js"
+                },
+                {
+                    "title": "Redux"
+                },
+                {
+                    "title": "Node"
+                },
+                {
+                    "title": "Express"
+                },
+                {
+                    "title": "Firebase"
+                },
+                {
+                    "title": "Redux Saga"
+                }
+            ]
+        },
+        {
+            "title": "Santas Carnitas",
+            "initial_date": "2020",
+            "end_date": "2021",
+            "description": {
+                "en": "Santas Carnitas | Online store for the sale of meat products.",
+                "es": "Santas Carnitas | Plataforma para venta de carnes online."
+            },
+            "tools": [
+                {
+                    "title": "Html"
+                },
+                {
+                    "title": "Css"
+                },
+                {
+                    "title": "React"
+                },
+                {
+                    "title": "Redux"
+                },
+                {
+                    "title": "Php"
+                },
+                {
+                    "title": "Myslql"
+                },
+                {
+                    "title": "Adobe XD"
+                },
+                {
+                    "title": "Otros..."
+                }
+            ]
+        }
+    ]
+}
