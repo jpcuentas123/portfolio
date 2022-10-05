@@ -4,7 +4,7 @@ import { Menu, Row, Col } from "antd";
 import { Change_link } from "../redux/index";
 import { useDispatch } from "react-redux";
 import { t } from "i18next";
-
+import MenuIcon from '@mui/icons-material/Menu';
 function HeaderMenu() {
 
   const {
@@ -31,6 +31,7 @@ function HeaderMenu() {
           mode="horizontal"
           className="Header-menu"
           selectedKeys={[initialLink]}
+          overflowedIndicator={<MenuIcon />}
         >
           <Menu.Item key="/">
             <Link onClick={() => redirectionHandler("/")} to="/">
