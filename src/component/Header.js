@@ -5,6 +5,10 @@ import { Change_link } from "../redux/index";
 import { useDispatch } from "react-redux";
 import { t } from "i18next";
 import MenuIcon from '@mui/icons-material/Menu';
+import { Button } from "@mui/material";
+import Api from "../firebase/http";
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+
 function HeaderMenu() {
 
   const {
@@ -18,6 +22,9 @@ function HeaderMenu() {
     dispatch(Change_link(link));
     changeInitialLink(link);
   };
+
+  const downloadCV = () =>
+    Api.downloads.downloadCv();
 
   return (
     <Row>
@@ -50,6 +57,9 @@ function HeaderMenu() {
             >
               {t("Contact")}
             </Link>
+          </Menu.Item>
+          <Menu.Item key="/cv">
+            <Button startIcon={<ArrowCircleDownIcon />} color="primary" onClick={downloadCV}>{t('Download cv')}</Button>
           </Menu.Item>
         </Menu>
       </Col>
