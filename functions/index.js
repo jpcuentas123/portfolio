@@ -32,7 +32,12 @@ exports.submit = functions.https.onRequest((req, res) => {
         to: gmailEmail,
         subject: `${req.body.subject}`,
         text: req.body.message,
-        html: `<p>${req.body.message}</p>`,
+        html: `
+          <p>${req.body.message}</p>
+          <p>From: ${req.body.name}</p>
+          <p>Email: ${req.body.email}</p>
+          <p>Phone: ${req.body.tel}</p>
+        `,
       };
 
       return mailTransport.sendMail(mailOptions).then(() => {
