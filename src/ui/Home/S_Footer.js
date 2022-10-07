@@ -9,6 +9,8 @@ const FooterContent = styled.section`
     padding-left: 5vw;
     padding-top: 10vh;
     color: white;
+    display: flex;
+    gap: 5vw;
     p {
       font-size: 16px;
       font-weight: 500;
