@@ -1,0 +1,12 @@
+[
+    {
+        "origin": [
+            "http://localhost:3000",
+            "https://jpcuentas.tech"
+        ],
+        "method": [
+            "GET"
+        ],
+        "maxAgeSeconds": 3600
+    }
+]
