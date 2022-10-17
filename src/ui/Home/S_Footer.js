@@ -3,6 +3,9 @@ import styled from "styled-components";
 const FooterSection = styled.section`
     height: 40vh;
     background-color: hsla(0, 0%, 38%, 0.85);
+    @media only screen and (max-width: 768px) {
+        height: auto;
+    }
 `;
 
 const FooterContent = styled.section`
@@ -36,6 +39,10 @@ const FooterContent = styled.section`
     a:focus{
         color: #Fdfdfd2d;
         text-decoration: underline;
+    }
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      padding-bottom: 10vh;
     }
 `
 
