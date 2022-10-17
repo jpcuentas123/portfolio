@@ -24,7 +24,7 @@ const HomeAbout = () => {
                 Jorge Pérez Cuentas
               </b>.
               {' '}
-              {t("I'm Software Engineer focused in Web Development and soon in AI. In the areas of: Ux - UI Design and FullStack Development.")}
+              {t("I'm Software Engineer focused in Web Development. In the areas of: Ux - UI Design and FullStack Development.")}
             </p>
           </Col>
           <Col offset={5} md={16}>
