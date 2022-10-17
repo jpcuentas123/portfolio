@@ -1,6 +1,8 @@
 {
   "ABOUT ME": "SOBRE MI",
+  "An error occurred": "Ocurrió un error",
   "Contact": "Contacto",
+  "Download cv": "Descargar CV",
   "El asunto es requerido": "",
   "El email es requerido": "",
   "El mensaje es requerido": "The message is required",
@@ -19,5 +21,6 @@
   "Send": "Enviar",
   "Social Networks": "Redes Sociales",
   "Subject": "Asunto",
-  "Tel": "Teléfono"
+  "Tel": "Teléfono",
+  "Your message has been sent": "Su mensaje ha sido enviado"
 }
