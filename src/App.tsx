@@ -9,12 +9,19 @@ import HeaderMenu from './component/Header';
 import Footer from './component/Footer';
 
 import store from './redux/store';
+import Storage from './firebase';
+import { logEvent } from 'firebase/analytics';
 
 const Home = React.lazy(() => import('./component/Home'));
 const Blog = React.lazy(() => import('./component/Blog'));
 const Contact = React.lazy(() => import('./component/Contact/View'));
 
 const { Header } = Layout;
+
+Storage.init();
+const analytics = Storage.getFirebaseAnalytics();
+
+logEvent(analytics, 'page_view');
 
 const App = () => {
     return (

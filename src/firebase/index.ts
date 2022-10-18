@@ -2,6 +2,7 @@
 import { FirebaseApp, initializeApp } from 'firebase/app';
 import { Firestore, getFirestore } from 'firebase/firestore';
 import { FirebaseStorage, getStorage } from 'firebase/storage';
+import { getAnalytics } from 'firebase/analytics';
 import { firebaseConfig } from './config';
 import SendEmail from './storage/sendEmail';
 
@@ -35,6 +36,15 @@ class Storage {
         const storage = getStorage(Storage.firebaseApp);
 
         return storage;
+    }
+
+    public static getFirebaseAnalytics() {
+        if (Storage.firebaseApp === null) {
+            throw new Error('firebase_not_initialized');
+        }
+
+        const analytics = getAnalytics(Storage.firebaseApp);
+        return analytics;
     }
 }
 
