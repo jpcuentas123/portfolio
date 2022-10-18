@@ -67,7 +67,7 @@ const HomeExperiences = () => {
                             <Col offset={2} md={18}>
                                 {
                                     ProjectAndExperiences[`${section}`].map((item, index) =>
-                                        <ExperienceContent item={item} section={section} />
+                                        <ExperienceContent item={item} section={section} key={item.company} />
                                     )
                                 }
                             </Col>
