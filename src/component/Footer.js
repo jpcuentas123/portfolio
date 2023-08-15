@@ -42,7 +42,7 @@ export default function Footer() {
           <ul>
             <li>
               <a href="mailto:jpcuentas123@gmail.com">
-                Email: <u>jpcuentas123@gmail.com</u>
+                Email: <u>contact@jpcuentas.tech</u>
               </a>
             </li>
             <li>
