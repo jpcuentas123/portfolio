@@ -2,12 +2,22 @@
     "experiences": [
         {
             "title": "Full Stack Developer",
+            "company": "Instaleap",
+            "initial_date": "2022",
+            "end_date": "2023",
+            "description": {
+                "en": "I worked as a full stack developer at Instaleap, defining and developing new features for the admin of the e-commerce app.",
+                "es": "Yo trabajé como full stack developer en <b>Instaleap</b>, definiendo y desarrollando nuevas features para el admin del e-commerce app."
+            }
+        },
+        {
+            "title": "Full Stack Developer",
             "company": "Melt Studio",
             "initial_date": "2021",
             "end_date": "Present",
             "description": {
-                "en": "I'm currently working as a full stack developer at <b>Melt Studio</b>, a company that develops web applications. I'm responsible for developing the frontend and backend of the applications, as well as the integration with the APIs of the real estate portals.",
-                "es": "Actualmente trabajo como desarrollador full stack en <b>Melt Studio</b>, una empresa que desarrolla aplicaciones web. Me encargo de desarrollar el frontend y el backend de las aplicaciones, así como la integración con las APIs."
+                "en": "I worked as a full stack developer at <b>Melt Studio</b>, a company that develops web applications. I'm responsible for developing the frontend and backend of the applications, as well as the integration with the APIs of the real estate portals.",
+                "es": "Yo trabajé como desarrollador full stack en <b>Melt Studio</b>, una empresa que desarrolla aplicaciones web. Me encargo de desarrollar el frontend y el backend de las aplicaciones, así como la integración con las APIs."
             }
         },
         {

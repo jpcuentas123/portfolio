@@ -46,7 +46,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="tel:+573024112312">Tel: <u>+57 302 411 2312</u></a>
+              <a href="tel:+573024112312">Tel: <u>+57 323 991 2702</u></a>
             </li>
           </ul>
         </section>
