@@ -2,14 +2,13 @@ const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 
 const gmailEmail = functions.config().gmail.email;
-const gmailPassword = functions.config().gmail.password;
 
 const mailTransport = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   auth: {
-    user: gmailEmail,
-    pass: gmailPassword,
+    user: process.env.REACT_USER,
+    pass: process.env.REACT_PASS,
   },
 });
 
