@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import About from './Home/About'
 import background from '../assets/img/Background1-min.png'
 import backgroundMb from '../assets/img/Background1-mb.jpg'
 
 import HomeExperiences from './Home/Experiences&Projects'
 
-class Home extends React.Component {
-  componentDidMount() {
+const Home = () => {
+  useEffect(() => {
     if (window.screen.width > 800)
       document.querySelector(
         'body'
@@ -15,15 +15,14 @@ class Home extends React.Component {
       document.querySelector(
         'body'
       ).style.backgroundImage = `url(${backgroundMb})`
-  }
-  render() {
-    return (
-      <div className="Home">
-        <About />
-        <HomeExperiences />
-      </div>
-    )
-  }
+  }, [])
+
+  return (
+    <div className="Home">
+      <About />
+      <HomeExperiences />
+    </div>
+  )
 }
 
 export default Home
