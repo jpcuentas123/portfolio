@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Skeleton } from 'antd';
+import { Row, Col } from 'antd';
 import styled from 'styled-components';
 
 class blogPreview extends React.Component {

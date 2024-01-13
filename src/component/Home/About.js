@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "antd";
-import { Trans, withTranslation } from "react-i18next";
+import { withTranslation } from "react-i18next";
 import { useTranslation } from "react-i18next";
 
 const HomeAbout = () => {
