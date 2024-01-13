@@ -1,13 +1,13 @@
-import { t } from "i18next";
-import React from "react";
-import { FooterContent, FooterSection, LineFooter } from "../ui/Home/S_Footer";
+import { t } from 'i18next'
+import React from 'react'
+import { FooterContent, FooterSection, LineFooter } from '../ui/Home/S_Footer'
 
 export default function Footer() {
   return (
     <FooterSection>
       <FooterContent>
         <section>
-          <p>{t("Social Networks")}</p>
+          <p>{t('Social Networks')}</p>
           <LineFooter></LineFooter>
           <ul>
             <li>
@@ -16,41 +16,33 @@ export default function Footer() {
                 target="_blanck"
                 tabIndex={0}
               >
-                Linkeding
+                LinkedIn
               </a>
             </li>
             <li>
-              <a href="#a" target="_blanck">
+              <a href="https://github.com/jpcuentas123" target="_blanck">
                 Github
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/jpcuentas" target="_blanck">
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/jpcuentas123/" target="_blanck">
-                Instagram
               </a>
             </li>
           </ul>
         </section>
         <section>
-          <p>{t("Contact")}</p>
+          <p>{t('Contact')}</p>
           <LineFooter></LineFooter>
           <ul>
             <li>
               <a href="mailto:jpcuentas123@gmail.com">
-                Email: <u>contact@jpcuentas.tech</u>
+                Email: <u>jpcuentas123@gmail.com</u>
               </a>
             </li>
             <li>
-              <a href="tel:+573024112312">Tel: <u>+57 323 991 2702</u></a>
+              <a href="tel:+573024112312">
+                Tel: <u>+57 323 991 2702</u>
+              </a>
             </li>
           </ul>
         </section>
       </FooterContent>
     </FooterSection>
-  );
+  )
 }
