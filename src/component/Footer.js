@@ -14,13 +14,18 @@ export default function Footer() {
               <a
                 href="https://www.linkedin.com/in/jorge-perez-cuentas-a26917157/"
                 target="_blanck"
+                title="LinkedIn Profile"
                 tabIndex={0}
               >
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/jpcuentas123" target="_blanck">
+              <a
+                href="https://github.com/jpcuentas123"
+                target="_blanck"
+                title="Github repository"
+              >
                 Github
               </a>
             </li>
@@ -31,12 +36,12 @@ export default function Footer() {
           <LineFooter></LineFooter>
           <ul>
             <li>
-              <a href="mailto:jpcuentas123@gmail.com">
+              <a href="mailto:jpcuentas123@gmail.com" title="Contact Email">
                 Email: <u>jpcuentas123@gmail.com</u>
               </a>
             </li>
             <li>
-              <a href="tel:+573024112312">
+              <a href="tel:+573024112312" title="My phone number">
                 Tel: <u>+57 323 991 2702</u>
               </a>
             </li>

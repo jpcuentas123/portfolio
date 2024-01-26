@@ -3,11 +3,25 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  font-family: "Neue Montreal", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li,
+h4 {
+  font-size: 14px;
 }
 
 #Header-logo {
   font-size: 32px;
-  padding-left: 4vw;
+  padding-left: 20px;
   font-weight: 400;
 }
 
@@ -20,7 +34,6 @@ body {
 .Header-content {
   background: rgba(239, 239, 239, 0.98) !important;
 }
-
 .Header-content p {
   margin: 0;
 }
@@ -34,43 +47,32 @@ body {
 }
 
 .Home-row {
-  min-height: 100vh;
+  min-height: 90vh;
   background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  gap: 10vw;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7vw;
+  box-sizing: border-box;
 }
-
-.Home-content {
-  margin: auto auto;
-  padding-top: 10vh;
-}
-
 .Home-content h2 {
   font-size: 34px;
   font-weight: 400;
 }
-
 .Home-content p {
   font-size: 16px;
   text-align: justify;
 }
-
-.Home-about-content-skills {
-  margin-top: 4vh;
-}
-
 .Home-divider {
+  width: 30vw;
   height: 2px;
-  background-color: #70707038;
-  margin-top: 5vh !important;
+  background-color: rgba(112, 112, 112, 0.2196078431);
 }
-
-.Home-experiences .ant-col {
-  text-align: center !important;
-}
-
 .Home-experiences small {
   font-size: 1rem;
 }
-
 .Home-experiences .selected {
   font-weight: 600;
   font-size: 1.1rem;
@@ -78,22 +80,17 @@ body {
   color: #1c1c1c;
   cursor: default;
 }
-
 .Home-experiences .unselected {
   color: rgba(112, 112, 112, 0.67);
   cursor: pointer;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .Home-experiences .unselected:hover {
-  color: #707070cc;
+  color: rgba(112, 112, 112, 0.8);
 }
-
 .Home-experiences-item {
   margin-bottom: 2rem;
 }
-
 .Home-experiences-contentTitle h3 {
   text-align: start;
   color: #707070;
@@ -101,54 +98,46 @@ body {
   font-weight: normal;
   padding-bottom: 0px;
   font-size: 1.3rem;
-  border-bottom: 1px #70707057 solid;
+  border-bottom: 1px rgba(112, 112, 112, 0.3411764706) solid;
 }
-
 .Home-experiences-content {
   padding-left: 4vw;
 }
-
 .Home-experiences-content .Experiences-content-date_info p {
   text-align: start;
 }
-
 .Home-experiences-content .Experiences-content-description p {
   text-align: justify;
   font-size: 1rem;
   font-weight: 400;
-  color: #353535;
+  color: rgb(53, 53, 53);
 }
-
 .Home-experiences-content li {
   font-size: 1em;
 }
-
 .Home-experiences-header {
   height: auto;
   padding-top: 0vh;
 }
-
 .Home-experiences-header h2 {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
   text-align: center;
 }
-
 .Home-experiences-container {
   min-height: 50vh;
   padding-top: 5vh;
 }
-
 .Home-experiences-container h2 {
   text-align: center;
 }
-
 .Home-blogPreview {
   min-height: 50vh;
 }
-
 .Home-blogPreview-header {
   margin: 4vh;
 }
-
 .Home-blogPreview-header h2 {
   text-align: center;
   font-size: 34px;
@@ -159,40 +148,32 @@ body {
   padding-top: 15vh;
   min-height: 100vh;
 }
-
 .Contact h2 {
   font-size: 34px;
   font-weight: 400;
   text-align: center;
 }
-
 .Contact .ant-select-selection.ant-select-selection--single {
   margin-top: 10px;
   height: 42px;
 }
-
 .Contact .ant-input.ant-select-search__field {
   margin-top: 0px !important;
 }
-
 .Contact textarea {
   margin-top: 10px;
   height: 100px;
 }
-
 .Contact-header h2 {
   padding-bottom: 2vh !important;
 }
-
 .Contact input {
   width: 100%;
 }
-
 .Contact-buttonContainer {
   text-align: center;
   margin-top: 20px;
 }
-
 .Contact-buttonContainer button {
   height: 40px;
   width: 8 0px;

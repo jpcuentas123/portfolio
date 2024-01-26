@@ -16,11 +16,10 @@ const Home = () => {
         'body'
       ).style.backgroundImage = `url(${backgroundMb})`
   }, [])
-
   return (
     <div className="Home">
-      <About />
-      <HomeExperiences />
+      <About sectionId={'about'} />
+      <HomeExperiences sectionId={'experiences'} />
     </div>
   )
 }

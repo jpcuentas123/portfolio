@@ -1,43 +1,44 @@
-import { Col, Row } from 'antd'
 import parse from 'html-react-parser'
 import i18next from 'i18next'
+import ExperienceContentWrapper from './styles'
+
 const ExperienceContent = ({ item, section }) => {
   return (
-    <Row className="Home-experiences-item">
-      <Col className="Home-experiences-contentTitle" md={6} translate="no">
+    <ExperienceContentWrapper className="Home-experiences-item">
+      <div className="Home-experiences-contentTitle" translate="no">
         <h3>{item.title}</h3>
-      </Col>
-      <Col md={14} className="Home-experiences-content">
-        <Row type="flex">
-          <Col md={24} className="Experiences-content-date_info">
+      </div>
+      <div className="Home-experiences-content">
+        <div>
+          <div className="Experiences-content-date_info">
             <p>
               {item.initial_date} - {item.end_date}
             </p>
-          </Col>
-          <Col md={24} className="Experiences-content-description">
+          </div>
+          <div className="Experiences-content-description">
             <p>{parse(item.description[i18next.language.split('-')[0]])}</p>
-          </Col>
-        </Row>
+          </div>
+        </div>
         {section === 'projects' && (
           <>
-            <Row>
-              <Col md={2}>
+            <div>
+              <div>
                 <p>
                   <b>Herramientas</b>
                 </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={24}>
+              </div>
+            </div>
+            <div>
+              <div>
                 {item.tools.map((tools, index) => (
                   <li style={{ textAlign: 'left' }}>{tools.title}</li>
                 ))}
-              </Col>
-            </Row>
+              </div>
+            </div>
           </>
         )}
-      </Col>
-    </Row>
+      </div>
+    </ExperienceContentWrapper>
   )
 }
 

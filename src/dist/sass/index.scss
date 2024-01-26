@@ -1,15 +1,27 @@
 $heightsections: 100vh;
 @import "fonts", "primaryTheme";
-
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  font-family: "Neue Montreal", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+li,
+h4 {
+  font-size: 14px;
 }
 #Header-logo {
   font-size: 32px;
-  padding-left: 4vw;
+  padding-left: 20px;
   font-weight: 400;
 }
 .Header-menu {
@@ -31,13 +43,17 @@ body {
 }
 .Home {
   &-row {
-    min-height: 100vh;
+    min-height: 90vh;
     background: $backgroundColor;
+    display: flex;
+    gap: 10vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7vw;
+    box-sizing: border-box;
   }
   &-content {
-    margin: auto auto;
-    padding-top: 10vh;
-
     h2 {
       font-size: 34px;
       font-weight: 400;
@@ -47,20 +63,13 @@ body {
       text-align: justify;
     }
   }
-  &-about-content {
-    &-skills {
-      margin-top: 4vh;
-    }
-  }
+
   &-divider {
+    width: 30vw;
     height: 2px;
     background-color: #70707038;
-    margin-top: 5vh !important;
   }
   &-experiences {
-    .ant-col {
-      text-align: center !important;
-    }
     small {
       font-size: $fontSzMedium;
     }
@@ -116,6 +125,9 @@ body {
       height: auto;
       padding-top: 0vh;
       h2 {
+        font-size: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
         text-align: center;
       }
     }
