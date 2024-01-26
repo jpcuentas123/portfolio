@@ -24,6 +24,7 @@ const MenuItem = styled.a<{ linkActive: boolean }>`
   border-bottom: ${({ linkActive }) =>
     linkActive ? '1px solid #000' : '1px solid transparent'};
   transition: all 0.3s;
+  color: #455a64;
   &:visited {
     color: inherit;
   }

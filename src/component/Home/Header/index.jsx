@@ -21,7 +21,7 @@ function HeaderMenu() {
           title="About"
           aria-label="Go to About section"
           tabIndex={0}
-          aria-controls="menu-list-1"
+          role="menuitem"
         >
           {t('About')}
         </MenuItem>
@@ -29,8 +29,8 @@ function HeaderMenu() {
           href="#experiences"
           title="Experiences"
           aria-label="Go to Experiences section"
-          aria-controls="menu-list-2"
           tabIndex={0}
+          role="menuitem"
         >
           {t('Experiences')}
         </MenuItem>
