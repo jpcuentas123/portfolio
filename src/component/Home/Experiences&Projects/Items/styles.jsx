@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
-const ExperienceContentWrapper = styled.div`
+const ExperienceItemsWrapper = styled.div`
   width: 50vw;
+  h4 {
+    font-size: 18px;
+  }
   @media (max-width: 600px) {
     width: 100%;
     padding: 0 20px;
@@ -16,4 +19,4 @@ const ExperienceContentWrapper = styled.div`
   grid-template-columns: 0.3fr 1fr;
 `
 
-export default ExperienceContentWrapper
+export default ExperienceItemsWrapper

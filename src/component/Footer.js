@@ -31,7 +31,7 @@ export default function Footer() {
             </li>
           </ul>
         </section>
-        <section>
+        <section className="Footer-contact">
           <p>{t('Contact')}</p>
           <LineFooter></LineFooter>
           <ul>

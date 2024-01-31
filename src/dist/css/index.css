@@ -1,3 +1,7 @@
+:root {
+  --secondary-color: #455a64;
+}
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +19,8 @@ html {
 }
 
 li,
-h4 {
+h4,
+p {
   font-size: 14px;
 }
 
@@ -47,14 +52,14 @@ h4 {
 }
 
 .Home-row {
-  min-height: 90vh;
+  min-height: 80vh;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   gap: 10vw;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 7vw;
+  padding-bottom: 5vh;
   box-sizing: border-box;
 }
 .Home-content h2 {

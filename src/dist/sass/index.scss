@@ -1,6 +1,9 @@
 $heightsections: 100vh;
 @import "fonts", "primaryTheme";
 // @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+:root {
+  --secondary-color: #455a64;
+}
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,9 +19,11 @@ html {
 }
 
 li,
-h4 {
+h4,
+p {
   font-size: 14px;
 }
+
 #Header-logo {
   font-size: 32px;
   padding-left: 20px;
@@ -43,14 +48,14 @@ h4 {
 }
 .Home {
   &-row {
-    min-height: 90vh;
+    min-height: 80vh;
     background: $backgroundColor;
     display: flex;
     gap: 10vw;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 7vw;
+    padding-bottom: 5vh;
     box-sizing: border-box;
   }
   &-content {

@@ -15,7 +15,7 @@ const HomeAbout = ({ sectionId }) => {
             <p className="Home-about-content-description">
               {t('My name is')} <b lang="es-CO">Jorge Pérez Cuentas</b>.{' '}
               {t(
-                "I'm Software Engineer focused in Web Development. In the areas of: Ux - UI Design and FullStack Development."
+                "Experienced Senior Software Engineer with 5 years of expertise. Proficient in React.js, I've successfully led end-to-end creation of diverse projects, including e-commerce platforms, machine maintenance software, and SaaS."
               )}
             </p>
           </div>
@@ -25,13 +25,11 @@ const HomeAbout = ({ sectionId }) => {
                 <b>Skills</b> - Frontend
               </p>
               <ul>
-                <li>JavaScript (EM6)</li>
-                <li>
-                  <span>React.js</span>
-                </li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Typescript</li>
                 <li>HTML & Css3</li>
                 <li>Sass</li>
-                <li>Design Ui - Ux</li>
               </ul>
             </div>
             <div>
@@ -39,10 +37,11 @@ const HomeAbout = ({ sectionId }) => {
                 <b>Skills</b> - Backend
               </p>
               <ul>
-                <li>PHP</li>
                 <li>Node.js</li>
                 <li>AWS</li>
                 <li>Firebase</li>
+                <li>PostgreSql</li>
+                <li>PHP</li>
               </ul>
             </div>
           </div>

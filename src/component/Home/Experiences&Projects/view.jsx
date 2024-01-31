@@ -1,7 +1,7 @@
 import ExperienceContent from './Items'
 import ExperiencesHeader from './header'
 import ExperiencesWrapper from './styles'
-import ProjectAndExperiences from '../../../data/ProjectAndExperiences.json'
+import ProjectAndExperiences from '../../../data/ProjectAndExperiences'
 
 const ExperiencesView = ({
   experiencesClickHandler,

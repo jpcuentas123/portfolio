@@ -1,15 +1,26 @@
 import parse from 'html-react-parser'
 import i18next from 'i18next'
-import ExperienceContentWrapper from './styles'
+import ExperienceItemsWrapper from './styles'
+import { IExperience, IProject } from '../../../../data/ProjectAndExperiences'
+import { FC } from 'react'
+import Responsibilities from './responsabilities'
 
-const ExperienceContent = ({ item, section }) => {
+type Props = {
+  item: IExperience | IProject
+  section: string
+}
+
+const ExperienceContent: FC<Props> = ({ item, section }) => {
   return (
-    <ExperienceContentWrapper className="Home-experiences-item">
+    <ExperienceItemsWrapper className="Home-experiences-item">
       <div className="Home-experiences-contentTitle" translate="no">
         <h3>{item.title}</h3>
       </div>
       <div className="Home-experiences-content">
         <div>
+          <div>
+            <h4>{item.company}</h4>
+          </div>
           <div className="Experiences-content-date_info">
             <p>
               {item.initial_date} - {item.end_date}
@@ -19,6 +30,7 @@ const ExperienceContent = ({ item, section }) => {
             <p>{parse(item.description[i18next.language.split('-')[0]])}</p>
           </div>
         </div>
+        <Responsibilities responsibilities={item.responsibilities} />
         {section === 'projects' && (
           <>
             <div>
@@ -30,15 +42,17 @@ const ExperienceContent = ({ item, section }) => {
             </div>
             <div>
               <div>
-                {item.tools.map((tools, index) => (
-                  <li style={{ textAlign: 'left' }}>{tools.title}</li>
+                {item.technologies.map(({ title }) => (
+                  <li style={{ textAlign: 'left' }} key={title}>
+                    {title}
+                  </li>
                 ))}
               </div>
             </div>
           </>
         )}
       </div>
-    </ExperienceContentWrapper>
+    </ExperienceItemsWrapper>
   )
 }
 
