@@ -30,6 +30,11 @@ const FooterContent = styled.section`
       color: rgb(206, 206, 206);
     }
   }
+  & .Footer-contact {
+    a {
+      text-decoration: none;
+    }
+  }
   a {
     display: block;
     color: white;
