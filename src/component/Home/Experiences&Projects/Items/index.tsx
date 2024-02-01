@@ -3,7 +3,8 @@ import i18next from 'i18next'
 import ExperienceItemsWrapper from './styles'
 import { IExperience, IProject } from '../../../../data/ProjectAndExperiences'
 import { FC } from 'react'
-import Responsibilities from './responsabilities'
+import Responsibilities from './responsibilities'
+import { t } from 'i18next'
 
 type Props = {
   item: IExperience | IProject
@@ -36,7 +37,7 @@ const ExperienceContent: FC<Props> = ({ item, section }) => {
             <div>
               <div>
                 <p>
-                  <b>Herramientas</b>
+                  <b>{t('Tools')}</b>
                 </p>
               </div>
             </div>

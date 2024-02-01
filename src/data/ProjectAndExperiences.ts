@@ -4,7 +4,7 @@ export interface IExperience {
   initial_date: string
   end_date: string
   description: { [key: string]: string }
-  responsibilities: string[]
+  responsibilities: { [key: string]: string }[]
   technologies: { title: string }[]
 }
 
@@ -14,7 +14,7 @@ export interface IProject {
   initial_date: string
   end_date: string
   description: { [key: string]: string }
-  responsibilities: string[]
+  responsibilities: { [key: string]: string }[]
   technologies: { title: string }[]
 }
 
@@ -35,20 +35,37 @@ const experiencesData: IExperiencesAndProjects = {
         es: 'Yo trabajé como full stack developer en <b>Instaleap</b>, definiendo y desarrollando nuevas features para el admin del e-commerce app.',
       },
       responsibilities: [
-        `Create and maintain E-commerce Admin Application
-        `,
-        `Follow Agile methodology to quickly develop new features.`,
-        `
+        {
+          en: 'Create new features and maintain E-commerce Admin Application',
+          es: 'Crear nuevas funcionalidades y mantener el Admin del E-commerce',
+        },
+
+        {
+          en: `
         Define new features and create new tasks.`,
-        `
+          es: 'Definir nuevas features y crear nuevas tasks',
+        },
+        {
+          en: `
         I contributed to defining and developing new features and improvements to the UX/UI of their admin panel, reducing the number of support tickets and user requests for actions that couldn't be performed without the admin panel.`,
-        `
+          es: 'Contribuí en la definición y desarrollo en nuevas features y mejoras a la UX/UI de su admin panel, reduciendo el número de tickets a soporte técnico y peticiones de cambios por parte del cliente que de otra manera no podrían ser ejecutadas sin el admin panel',
+        },
+        {
+          en: `
         I defined and developed a module that posed a scalability and performance challenge.`,
-        `
+          es: 'Definí y desarrollé un module que suponía un reto en escala y rendimiento tanto en front-end como en el back-end',
+        },
+        {
+          en: `
         Additionally, I played a key role in defining a clear and scalable solution for one of the company's challenges in its picking system, establishing the foundation for a system that will serve as a competitive advantage for the company.`,
-        `
+          es: 'Adicionalmente, Jugué un rol clave definiendo una solución clara y escalable para uno de los retos en el sistema de picking de la compañía, sentando las bases para un sistema que va a ser una ventaja competitiva para la compañía',
+        },
+        {
+          en: `
         I used React.js, Redux, Redux Toolkit, Jest, Testing-library, Node.js, AWS, Antd, and Jira
         `,
+          es: 'Usé React.js, Redux, Redux Toolkit, Jest, Testing-library, Node.js, AWS, Antd, and Jira',
+        },
       ],
       technologies: [],
     },
@@ -62,11 +79,20 @@ const experiencesData: IExperiencesAndProjects = {
         es: 'Yo trabajé como desarrollador full stack en <b>Melt Studio</b>, una empresa que desarrolla aplicaciones web. Me encargo de desarrollar el frontend y el backend de las aplicaciones, así como la integración con las APIs.',
       },
       responsibilities: [
-        `Define, develop, and maintain web applications.`,
-        `
+        {
+          en: `Define, develop, and maintain web applications.`,
+          es: 'Definir, desarrollar y mantener Apps webs',
+        },
+        {
+          en: `
         Mentoring, leading developers, and making technical decisions.`,
-        `
+          es: 'Mentor, liderar developers y tomar decisiones técnicas',
+        },
+        {
+          en: `
         I used React.js, Redux, Next.js, Redux Toolkit, Jest, Testing-library, Firebase, Node.js, GraphQl, Material UI, and Pivotal Tracker.`,
+          es: 'Usé React.js, Redux, Next.js, Redux Toolkit, Jest, Testing-library, Firebase, Node.js, GraphQl, Material UI, and Pivotal Tracker.',
+        },
       ],
       technologies: [],
     },
@@ -80,7 +106,10 @@ const experiencesData: IExperiencesAndProjects = {
         es: 'Trabajé como desarrollador full stack en <b>Krones</b>, una empresa que desarrolla máquinas para la industria de bebidas. Desarrollé el frontend y el backend de una aplicación que gestiona la producción de las máquinas.',
       },
       responsibilities: [
-        'Lead the definition, design, and development of the machine maintenance status 	monitoring platform for this company in Latin America.',
+        {
+          en: 'Lead the definition, design, and development of the machine maintenance status 	monitoring platform for this company in Latin America.',
+          es: 'Liderar la definición, diseño y desarrollo del software de seguimiento del estado de mantenimiento para las maquinas de esta compañía en la región',
+        },
       ],
       technologies: [],
     },
@@ -94,7 +123,10 @@ const experiencesData: IExperiencesAndProjects = {
         es: 'Trabajé como desarrollador full stack en <b>Itseil</b>, una empresa que desarrolla aplicaciones web. Me encargaba de desarrollar el frontend y el backend de las aplicaciones, así como la integración con las APIs.',
       },
       responsibilities: [
-        'Lead the definition, design, and development of machine maintenance status monitoring software in Latin America.',
+        {
+          en: 'Lead the definition, design, and developing different projects.',
+          es: 'Liderar la definición, diseño y desarrollo de diferentes proyectos',
+        },
       ],
       technologies: [],
     },
@@ -108,7 +140,10 @@ const experiencesData: IExperiencesAndProjects = {
         es: 'Trabajé como desarrollador freelance en la plataforma <b>Workana</b>, donde desarrollé aplicaciones web para diferentes clientes.',
       },
       responsibilities: [
-        'Freelancer in Workana for 2 years. Defining, designing, and developing different projects.',
+        {
+          en: 'Freelancer in Workana for 2 years. Defining, designing, and developing different projects.',
+          es: 'Freelancer en Workana durante 2 años. Definiendo, diseñando y desarrollando diferentes proyectos',
+        },
       ],
       technologies: [],
     },
