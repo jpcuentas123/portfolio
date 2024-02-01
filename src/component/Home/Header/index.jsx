@@ -1,5 +1,6 @@
 import { t } from 'i18next'
 import { HeaderWrapper, MenuItem } from './styles'
+import { CV_PDF_PATH } from '../../../constants'
 
 function HeaderMenu() {
   // const [initialLink, changeInitialLink] = useState(pathname)
@@ -33,6 +34,16 @@ function HeaderMenu() {
           role="menuitem"
         >
           {t('Experiences')}
+        </MenuItem>
+        <MenuItem
+          href={CV_PDF_PATH}
+          title="Download CV"
+          aria-label="Download CV"
+          tabIndex={0}
+          target="_blanck"
+          role="menuitem"
+        >
+          {t('Download CV')}
         </MenuItem>
         {/* <Button
           startIcon={<ArrowCircleDownIcon />}
