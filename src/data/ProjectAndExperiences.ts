@@ -102,8 +102,8 @@ const experiencesData: IExperiencesAndProjects = {
       initial_date: '2020',
       end_date: '2021',
       description: {
-        en: 'I worked as a full stack developer at <b>Krones</b>, a company that develops machines for the beverage industry. I was responsible for developing the frontend and backend of an application that manages the production of the machines.',
-        es: 'Trabajé como desarrollador full stack en <b>Krones</b>, una empresa que desarrolla máquinas para la industria de bebidas. Desarrollé el frontend y el backend de una aplicación que gestiona la producción de las máquinas.',
+        en: 'I worked as a full stack developer at <b>Krones</b>, a company that develops machines for the beverage industry. I was responsible for developing the frontend and backend of an application that track the machine maintenance status.',
+        es: 'Trabajé como desarrollador full stack en <b>Krones</b>, una empresa que desarrolla máquinas para la industria de bebidas. Desarrollé el frontend y el backend de una aplicación que supervisa el estado de mantenimiento de las maquinas.',
       },
       responsibilities: [
         {
@@ -150,13 +150,41 @@ const experiencesData: IExperiencesAndProjects = {
   ],
   projects: [
     {
-      title: 'Suscripciones',
-      company: 'MeltStudio',
+      title: 'CEO',
+      company: 'HS',
+      initial_date: '2023',
+      end_date: 'current',
+      description: {
+        en: 'Lead the definition, design, and development of a platform to make study something more efficient',
+        es: 'Liderar la definición, diseño y desarrollo de HS una plataforma para hacer del estudio algo mucho mas eficiente',
+      },
+      responsibilities: [],
+      technologies: [
+        {
+          title: 'React',
+        },
+        {
+          title: 'Redux',
+        },
+        {
+          title: 'Node.JS',
+        },
+        {
+          title: 'PostgreSQl',
+        },
+        {
+          title: 'Figma',
+        },
+      ],
+    },
+    {
+      title: 'Full Stack Developer',
+      company: 'KPMT | Krones',
       initial_date: '2020',
       end_date: '2021',
       description: {
-        en: 'Suscripciones | Platform for managing subscriptions.',
-        es: 'Suscripciones | Plataforma para la gestión de suscripciones.',
+        en: 'Lead the definition, design, and development of the machine maintenance status 	monitoring platform for this company in Latin America.',
+        es: 'Liderar la definición, diseño y desarrollo del software de seguimiento del estado de mantenimiento para las maquinas de esta compañía en la región',
       },
       responsibilities: [],
       technologies: [
@@ -170,27 +198,21 @@ const experiencesData: IExperiencesAndProjects = {
           title: 'React',
         },
         {
-          title: 'Next js',
-        },
-        {
           title: 'Redux',
         },
         {
-          title: 'Node',
+          title: 'PHP',
         },
         {
-          title: 'Express',
+          title: 'MySQL',
         },
         {
-          title: 'Firebase',
-        },
-        {
-          title: 'Redux Saga',
+          title: 'ABODE XD',
         },
       ],
     },
     {
-      title: 'Santas Carnitas',
+      title: 'Full Stack Developer',
       company: 'Santas Carnitas',
       initial_date: '2020',
       end_date: '2021',
@@ -216,7 +238,7 @@ const experiencesData: IExperiencesAndProjects = {
           title: 'Php',
         },
         {
-          title: 'Myslql',
+          title: 'MySQL',
         },
         {
           title: 'Adobe XD',

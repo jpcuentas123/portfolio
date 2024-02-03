@@ -27,9 +27,10 @@ const HomeAbout = ({ sectionId }) => {
               <ul>
                 <li>JavaScript</li>
                 <li>React.js</li>
+                <li>Next.js</li>
                 <li>Typescript</li>
-                <li>HTML & Css3</li>
-                <li>Sass</li>
+                <li>HTML & CSS3</li>
+                <li>SASS</li>
               </ul>
             </div>
             <div>
@@ -38,6 +39,7 @@ const HomeAbout = ({ sectionId }) => {
               </p>
               <ul>
                 <li>Node.js</li>
+                <li>Express</li>
                 <li>AWS</li>
                 <li>Firebase</li>
                 <li>PostgreSql</li>
