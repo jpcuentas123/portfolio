@@ -11,6 +11,12 @@ type Props = {
   section: string
 }
 
+const CompanyName = ({ name }: { name: string }) => (
+  <>
+    <h4>{name}</h4>
+  </>
+)
+
 const ExperienceContent: FC<Props> = ({ item, section }) => {
   return (
     <ExperienceItemsWrapper className="Home-experiences-item">
@@ -20,9 +26,13 @@ const ExperienceContent: FC<Props> = ({ item, section }) => {
       <div className="Home-experiences-content">
         <div>
           <div className="company-name">
-            <a href={item.link} title="" target="__blanck">
-              <h4>{item.company}</h4> <MdOpenInNew />
-            </a>
+            {item.link ? (
+              <a href={item.link} title="" target="__blanck">
+                <CompanyName name={item.company} /> <MdOpenInNew />
+              </a>
+            ) : (
+              <CompanyName name={item.company} />
+            )}
           </div>
           <div className="Experiences-content-date_info">
             <p>
@@ -34,7 +44,7 @@ const ExperienceContent: FC<Props> = ({ item, section }) => {
           </div>
         </div>
         <Responsibilities responsibilities={item.responsibilities} />
-        {section === 'projects' && (
+        {item.technologies.length > 0 && (
           <>
             <div>
               <div>
@@ -43,14 +53,16 @@ const ExperienceContent: FC<Props> = ({ item, section }) => {
                 </p>
               </div>
             </div>
-            <div>
-              <div>
-                {item.technologies.map(({ title }) => (
-                  <li style={{ textAlign: 'left' }} key={title}>
-                    {title}
-                  </li>
-                ))}
-              </div>
+            <div className="Experiences-content-tools">
+              {item.technologies.map(({ title }) => (
+                <span
+                  className="Experiences-content-tools-technology"
+                  style={{ textAlign: 'left' }}
+                  key={title}
+                >
+                  {title}
+                </span>
+              ))}
             </div>
           </>
         )}

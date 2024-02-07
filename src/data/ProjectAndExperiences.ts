@@ -69,7 +69,35 @@ const experiencesData: IExperiencesAndProjects = {
           es: 'Usé React.js, Redux, Redux Toolkit, Jest, Testing-library, Node.js, AWS, Antd, and Jira',
         },
       ],
-      technologies: [],
+      technologies: [
+        {
+          title: 'HTML',
+        },
+        {
+          title: 'CSS',
+        },
+        {
+          title: 'React',
+        },
+        {
+          title: 'Redux',
+        },
+        {
+          title: 'Node.js',
+        },
+        {
+          title: 'Typescript',
+        },
+        {
+          title: 'GitHub Actions',
+        },
+        {
+          title: 'Jira',
+        },
+        {
+          title: 'AWS',
+        },
+      ],
       link: 'https://instaleap.io/es/',
     },
     {
@@ -97,7 +125,38 @@ const experiencesData: IExperiencesAndProjects = {
           es: 'Usé React.js, Redux, Next.js, Redux Toolkit, Jest, Testing-library, Firebase, Node.js, GraphQl, Material UI, and Pivotal Tracker.',
         },
       ],
-      technologies: [],
+      technologies: [
+        {
+          title: 'HTML',
+        },
+        {
+          title: 'CSS',
+        },
+        {
+          title: 'React',
+        },
+        {
+          title: 'Next.js',
+        },
+        {
+          title: 'Redux',
+        },
+        {
+          title: 'Node.js',
+        },
+        {
+          title: 'Typescript',
+        },
+        {
+          title: 'GitLab',
+        },
+        {
+          title: 'GraphQl',
+        },
+        {
+          title: 'Firebase',
+        },
+      ],
       link: 'https://www.meltstudio.co/',
     },
     {
@@ -115,7 +174,32 @@ const experiencesData: IExperiencesAndProjects = {
           es: 'Liderar la definición, diseño y desarrollo del software de seguimiento del estado de mantenimiento para las maquinas de esta compañía en la región',
         },
       ],
-      technologies: [],
+      technologies: [
+        {
+          title: 'HTML',
+        },
+        {
+          title: 'CSS',
+        },
+        {
+          title: 'React',
+        },
+        {
+          title: 'Redux',
+        },
+        {
+          title: 'PHP',
+        },
+        {
+          title: 'PhpOffice',
+        },
+        {
+          title: 'MySQL',
+        },
+        {
+          title: 'Adobe XD',
+        },
+      ],
       link: 'https://www.krones.com/es/index.php',
     },
     {
@@ -133,7 +217,32 @@ const experiencesData: IExperiencesAndProjects = {
           es: 'Liderar la definición, diseño y desarrollo de diferentes proyectos',
         },
       ],
-      technologies: [],
+      technologies: [
+        {
+          title: 'HTML',
+        },
+        {
+          title: 'CSS',
+        },
+        {
+          title: 'React',
+        },
+        {
+          title: 'Redux',
+        },
+        {
+          title: 'PHP',
+        },
+        {
+          title: 'MySQL',
+        },
+        {
+          title: 'WordPress',
+        },
+        {
+          title: 'Adobe XD',
+        },
+      ],
       link: '',
     },
     {
@@ -151,7 +260,35 @@ const experiencesData: IExperiencesAndProjects = {
           es: 'Freelancer en Workana durante 2 años. Definiendo, diseñando y desarrollando diferentes proyectos',
         },
       ],
-      technologies: [],
+      technologies: [
+        {
+          title: 'HTML',
+        },
+        {
+          title: 'CSS',
+        },
+        {
+          title: 'React',
+        },
+        {
+          title: 'Redux',
+        },
+        {
+          title: 'PHP',
+        },
+        {
+          title: 'MySQL',
+        },
+        {
+          title: 'AWS',
+        },
+        {
+          title: 'WordPress',
+        },
+        {
+          title: 'Adobe XD',
+        },
+      ],
       link: 'https://www.workana.com/freelancer/687759c0bfcf18d398d6e575990bfc9b?ref=user_dropdown',
     },
   ],
@@ -181,6 +318,9 @@ const experiencesData: IExperiencesAndProjects = {
         },
         {
           title: 'Figma',
+        },
+        {
+          title: 'Slite',
         },
       ],
       link: '',
@@ -215,7 +355,7 @@ const experiencesData: IExperiencesAndProjects = {
           title: 'MySQL',
         },
         {
-          title: 'ABODE XD',
+          title: 'Adobe XD',
         },
       ],
       link: '',
@@ -232,10 +372,10 @@ const experiencesData: IExperiencesAndProjects = {
       responsibilities: [],
       technologies: [
         {
-          title: 'Html',
+          title: 'HTML',
         },
         {
-          title: 'Css',
+          title: 'CSS',
         },
         {
           title: 'React',
@@ -251,9 +391,6 @@ const experiencesData: IExperiencesAndProjects = {
         },
         {
           title: 'Adobe XD',
-        },
-        {
-          title: 'Otros...',
         },
       ],
       link: '',

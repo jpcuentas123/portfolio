@@ -29,7 +29,24 @@ const ExperienceItemsWrapper = styled.div`
     width: 60vw;
   }
   display: grid;
-  grid-template-columns: 0.3fr 1fr;
+  grid-template-columns: 30% 70%;
+  .Experiences-content-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    &-technology {
+      background: linear-gradient(0.2turn, #455a64, #455a64b8);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 5px;
+      transition: all 0.4s;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        background: linear-gradient(0.2turn, #455a64, #455a64b8 50%);
+      }
+    }
+  }
 `
 
 export default ExperienceItemsWrapper
