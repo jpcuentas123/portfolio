@@ -1,12 +1,13 @@
 import { t } from 'i18next'
 import React from 'react'
 import { FooterContent, FooterSection, LineFooter } from '../ui/Home/S_Footer'
+import { MdOpenInNew } from 'react-icons/md'
 
 export default function Footer() {
   return (
     <FooterSection>
       <FooterContent>
-        <section>
+        <section className="Footer-socials">
           <p>{t('Social Networks')}</p>
           <LineFooter></LineFooter>
           <ul>
@@ -17,7 +18,7 @@ export default function Footer() {
                 title="LinkedIn Profile"
                 tabIndex={0}
               >
-                LinkedIn
+                LinkedIn <MdOpenInNew />
               </a>
             </li>
             <li>
@@ -26,7 +27,7 @@ export default function Footer() {
                 target="_blanck"
                 title="Github repository"
               >
-                Github
+                Github <MdOpenInNew />
               </a>
             </li>
           </ul>

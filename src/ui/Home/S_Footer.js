@@ -14,6 +14,14 @@ const FooterContent = styled.section`
   color: white;
   display: flex;
   gap: 5vw;
+  .Footer-socials {
+    a {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
   p {
     font-size: 16px;
     font-weight: 500;
@@ -24,7 +32,7 @@ const FooterContent = styled.section`
     li {
       font-size: 14px;
       cursor: pointer;
-      transition: all 0.5s;
+      transition: all 0.4s;
     }
     li:hover {
       color: rgb(206, 206, 206);
@@ -40,6 +48,7 @@ const FooterContent = styled.section`
     color: white;
     margin: 15px 0;
     padding: 2px;
+    transition: all 0.3s;
   }
   a:hover {
     color: #fdfdfd2d;

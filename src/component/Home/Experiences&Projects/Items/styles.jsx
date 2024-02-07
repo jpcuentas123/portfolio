@@ -2,6 +2,19 @@ import styled from 'styled-components'
 
 const ExperienceItemsWrapper = styled.div`
   width: 50vw;
+  .company-name {
+    a {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #1c1c1c;
+      transition: all 0.4s;
+    }
+    a:hover {
+      color: #5f5f5f;
+    }
+  }
   h4 {
     font-size: 18px;
   }

@@ -6,6 +6,7 @@ export interface IExperience {
   description: { [key: string]: string }
   responsibilities: { [key: string]: string }[]
   technologies: { title: string }[]
+  link: string
 }
 
 export interface IProject {
@@ -16,6 +17,7 @@ export interface IProject {
   description: { [key: string]: string }
   responsibilities: { [key: string]: string }[]
   technologies: { title: string }[]
+  link: string
 }
 
 export interface IExperiencesAndProjects {
@@ -68,6 +70,7 @@ const experiencesData: IExperiencesAndProjects = {
         },
       ],
       technologies: [],
+      link: 'https://instaleap.io/es/',
     },
     {
       title: 'Full Stack Developer',
@@ -95,6 +98,7 @@ const experiencesData: IExperiencesAndProjects = {
         },
       ],
       technologies: [],
+      link: 'https://www.meltstudio.co/',
     },
     {
       title: 'Full Stack Developer',
@@ -112,6 +116,7 @@ const experiencesData: IExperiencesAndProjects = {
         },
       ],
       technologies: [],
+      link: 'https://www.krones.com/es/index.php',
     },
     {
       title: 'Full Stack Developer',
@@ -129,6 +134,7 @@ const experiencesData: IExperiencesAndProjects = {
         },
       ],
       technologies: [],
+      link: '',
     },
     {
       title: 'Freelance',
@@ -146,6 +152,7 @@ const experiencesData: IExperiencesAndProjects = {
         },
       ],
       technologies: [],
+      link: 'https://www.workana.com/freelancer/687759c0bfcf18d398d6e575990bfc9b?ref=user_dropdown',
     },
   ],
   projects: [
@@ -176,6 +183,7 @@ const experiencesData: IExperiencesAndProjects = {
           title: 'Figma',
         },
       ],
+      link: '',
     },
     {
       title: 'Full Stack Developer',
@@ -210,6 +218,7 @@ const experiencesData: IExperiencesAndProjects = {
           title: 'ABODE XD',
         },
       ],
+      link: '',
     },
     {
       title: 'Full Stack Developer',
@@ -247,6 +256,7 @@ const experiencesData: IExperiencesAndProjects = {
           title: 'Otros...',
         },
       ],
+      link: '',
     },
   ],
 }

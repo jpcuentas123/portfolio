@@ -5,7 +5,7 @@ import { IExperience, IProject } from '../../../../data/ProjectAndExperiences'
 import { FC } from 'react'
 import Responsibilities from './responsibilities'
 import { t } from 'i18next'
-
+import { MdOpenInNew } from 'react-icons/md'
 type Props = {
   item: IExperience | IProject
   section: string
@@ -19,8 +19,10 @@ const ExperienceContent: FC<Props> = ({ item, section }) => {
       </div>
       <div className="Home-experiences-content">
         <div>
-          <div>
-            <h4>{item.company}</h4>
+          <div className="company-name">
+            <a href={item.link} title="" target="__blanck">
+              <h4>{item.company}</h4> <MdOpenInNew />
+            </a>
           </div>
           <div className="Experiences-content-date_info">
             <p>
